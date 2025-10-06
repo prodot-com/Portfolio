@@ -53,7 +53,7 @@ const Home = () => {
             <Moon size={40} className="border mr-2 border-neutral-400 p-1.5 rounded-full text-neutral-600 dark:text-white hover:bg-neutral-100 dark:hover:bg-[#262626] transition-colors" />
           )}
         </button>
-        </div>
+        </div> 
       </div>
 
       
