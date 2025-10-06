@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+@keyframes border-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Rotating glow ring */
+.animate-border-spin {
+  border-radius: 1.5rem; /* matches rounded-3xl */
+  background: conic-gradient(
+    from 0deg,
+    #00ff7f,
+    #006400,
+    #00ff7f
+  );
+  animation: border-spin 3s linear infinite;
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: 2px;
+  box-shadow: 0 0 15px rgba(0, 255, 127, 0.6);
+}
