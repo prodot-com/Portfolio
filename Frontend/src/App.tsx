@@ -2,7 +2,7 @@ import Home from "./Components/Home"
 
 const App = () => {
   return (
-<div className="min-h-screen w-full bg-neutral-200 relative">
+<div className="min-h-screen w-full bg-white relative">
      <Home/>
 </div>
   )
