@@ -187,8 +187,8 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="rounded-2xl p-[1.4px] animate-rotate-border bg-conic/[from_var(--border-angle)] dark:from-black via-green-500 dark:to-black from-80% via-90% to-100%">
-              <div className="relative dark:border-neutral-300  rounded-2xl bg-white dark:bg-neutral-900 overflow-x-auto scrollbar-hide md:mx-0">
+            <div className="rounded-2xl p-[1.4px] animate-rotate-border bg-conic/[from_var(--border-angle)] dark:from-bg-neutral-900 via-green-500 dark:bg-neutral-900 from-80% via-90% to-100%">
+              <div className="relative px-5 py-3 rounded-2xl bg-white dark:bg-neutral-900 overflow-x-auto scrollbar-hide md:mx-0">
                 <GitHubCalendar
                   username="prodot-com"
                   blockSize={8}
