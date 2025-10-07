@@ -120,8 +120,11 @@ const Home = () => {
   </div>
 
   
-  <div className="relative border-2 border-black dark:border-neutral-300 p-2 rounded-lg 
-  bg-white dark:bg-neutral-900 overflow-x-auto scrollbar-hide mx-4 md:mx-0">
+  <div className=" rounded-2xl p-[1.4px] animate-rotate-border bg-conic/[from_var(--border-angle)]
+  dark:from-black via-green-500  dark:to-black from-80% via-90% to-100% ">
+
+    <div className="relative dark:border-neutral-300 p-2 rounded-2xl 
+    bg-white dark:bg-neutral-900 overflow-x-auto scrollbar-hide mx-4 md:mx-0">
     
     <GitHubCalendar
       username="prodot-com"
@@ -136,6 +139,7 @@ const Home = () => {
         color: isDarkMode ? "white" : "black",
       }}
     />
+  </div>
   </div>
 </div>
 
