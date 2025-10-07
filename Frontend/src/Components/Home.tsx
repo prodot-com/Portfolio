@@ -40,13 +40,12 @@ const Home = () => {
     <div className="col-span-2">
       <div className="flex flex-col items-center min-h-screen relative overflow-hidden">
       <div className="fixed top-0 left-0 w-full h-[70px] bg-white dark:bg-black shadow z-30 flex items-center justify-center">
-        <div className="flex max-w-5xl h-full">
-          <div className=" h-full w-5xl flex items-center">
+        <div className="flex max-w-3xl h-full">
+          <div className="ml-3 h-full w-5xl flex justify-between items-center">
             <h1 className="pl-2 cursor-pointer bitcount-double-ink hover:underline decoration-[#A22DA2] text-3xl tracking-tight  transition delay-25">
               probal
             </h1>
-          </div>
-          <button onClick={toggleDarkMode} aria-label="Toggle Dark Mode">
+            <button onClick={toggleDarkMode} aria-label="Toggle Dark Mode">
             {isDarkMode ? (
               <Sun
                 size={40}
@@ -59,6 +58,8 @@ const Home = () => {
               />
             )}
           </button>
+          </div>
+          
         </div>
       </div>
 
@@ -75,16 +76,17 @@ const Home = () => {
         <div className="absolute bottom-0 top-0 right-0 w-[70px] bg-gradient-to-l from-white dark:from-neutral-900 to-transparent"></div>
 
         <div className="absolute inset-0 flex items-center font-bold justify-center text-white dark:text-black italic text-2xl heading-font">
-          Building something.
+          Build anything.
         </div>
       </div>
 
       {/* ─── Profile Section ───────────────────── */}
-      <div className="w-full max-w-5xl mt-[-72px] ml-20 z-20">
+      <div className="w-full max-w-5xl mt-[-72px] ml-12 z-20">
         <img
           src={pro2}
           alt="Profile"
-          className="w-35 h-35 rounded-full border-4 border-white dark:border-neutral-600 shadow-xl mb-4 object-cover"
+          className="w-35 h-35 rounded-full border-4 border-white 
+          dark:border-neutral-600 shadow-xl mb-4 object-cover ml-4"
         />
         <div>
           <h2 className="heading-font text-black dark:text-white text-4xl font-semibold tracking-tight">
@@ -96,7 +98,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="heading-font w-full pr-17 max-w-5xl ml-20 mt-10 z-20">
+      <div className=" heading-font w-full pr-17 max-w-5xl ml-12 mt-10 z-20">
         <div className="flex">
           <p className="font-bold text-2xl text-black dark:text-white">About</p>
         </div>
@@ -109,30 +111,34 @@ const Home = () => {
         </p>
       </div>
 
-<div className=" mt-10 flex flex-col gap-2 w-full max-w-5xl">
-  <div className="mx-9 ">
-    <p className="font-bold text-black dark:text-white text-xl heading-font">
-        Github Contribution • @prodot-com
-      </p>
+<div className="mt-10 pl-6 flex flex-col gap-3 w-full max-w-5xl ">
+  {/* Heading */}
+  <div className="px-4 md:px-0 ">
+    <p className="font-bold text-black dark:text-white text-xl heading-font selection:bg-neutral-600">
+      GitHub Contributions • <span className="hover:underline cursor-pointer">@prodot-com</span>
+    </p>
   </div>
+
   
-      <div className="border-2 border-black dark:border-neutral-300 p-3 rounded-lg mx-9 overflow-x-auto scrollbar-hide">
-        <GitHubCalendar
-        username="prodot-com"
-        hideColorLegend={false}
-        hideTotalCount={false}
-        showWeekdayLabels={false}
-        errorMessage="Ooops!"
-        hideMonthLabels={false}
-        colorScheme={isDarkMode ? "dark" : "light"}
-        style={{
-        
-          margin: "auto",
-          color: isDarkMode ? "white" : "black",
-        }}
-      />
-      </div>
+  <div className="relative border-2 border-black dark:border-neutral-300 p-2 rounded-lg 
+  bg-white dark:bg-neutral-900 overflow-x-auto scrollbar-hide mx-4 md:mx-0">
+    
+    <GitHubCalendar
+      username="prodot-com"
+      blockSize={9}
+      fontSize={11}
+      errorMessage="Error while fetching data"
+      showWeekdayLabels={true}
+      hideColorLegend={false}
+      hideTotalCount={false}
+      colorScheme={isDarkMode ? "dark" : "light"}
+      style={{
+        color: isDarkMode ? "white" : "black",
+      }}
+    />
+  </div>
 </div>
+
 
 
       <div className="w-full min-h-[100px] mt-2">
