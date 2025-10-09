@@ -11,31 +11,26 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { Sun, House, Moon } from "lucide-react";
-import { Marquee } from "@/Components/magicui/marquee";
-// import TechStackMarquee from "@/Components/ui/TeachStack";
-import { MarqueeDemo } from "@/Components/ui/TeachStack";
+import {TechStackMarquee } from "@/Components/ui/TechStack";
+import { AnimatedThemeToggler } from "@/Components/magicui/animated-theme-toggler";
 
 
 
 
 
 const Home = () => {
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-      return savedTheme === "dark";
-    }
-    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+useEffect(() => {
+  const currentTheme = document.documentElement.classList.contains("dark");
+  setIsDarkMode(currentTheme);
+  const observer = new MutationObserver(() => {
+    setIsDarkMode(document.documentElement.classList.contains("dark"));
   });
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [isDarkMode]);
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+  return () => observer.disconnect();
+}, []);
+
 
   const toggleDarkMode = () => {
     setIsDarkMode((prevMode) => !prevMode);
@@ -118,17 +113,7 @@ const Home = () => {
                   probal
                 </h1>
                 <button onClick={toggleDarkMode} aria-label="Toggle Dark Mode">
-                  {isDarkMode ? (
-                    <Sun
-                      size={32}
-                      className="border border-white/60 p-1.5 rounded-full text-white/60 hover:bg-neutral-800 transition-colors"
-                    />
-                  ) : (
-                    <Moon
-                      size={32}
-                      className="border border-neutral-400 p-1.5 rounded-full text-neutral-600 dark:text-white hover:bg-neutral-100 dark:hover:bg-[#262626] transition-colors"
-                    />
-                  )}
+                  <AnimatedThemeToggler className="pt-1.5"/>
                 </button>
               </div>
             </div>
@@ -213,8 +198,7 @@ const Home = () => {
             </div>
           </div>
 
-          <MarqueeDemo/>
-          {/* <TechStackMarquee/> */}
+          <TechStackMarquee/>
 
           <div className="w-full min-h-[250px] mt-2">
            
@@ -283,18 +267,7 @@ const Home = () => {
               onClick={toggleDarkMode}
               aria-label="Toggle Dark Mode"
             >
-              {isDarkMode ? (
-                <Sun
-                  size={35}
-                  className="px-1 py-1.5 hover:ml-3 rounded-full dark:hover:bg-[#262626] dark:text-white hover:bg-neutral-300 transition-all duration-300 ease-in-out"
-                />
-              ) : (
-                <Moon
-                  size={35}
-                  className="px-1 py-1.5 hover:ml-3 rounded-full dark:hover:bg-[#262626] dark:text-white hover:bg-neutral-300 transition-all duration-300 ease-in-out"
-                />
-              )}
-
+              <AnimatedThemeToggler className="pt-1.5 pl-1.5"/>
               <span className="absolute bottom-10 left-1/2 -translate-x-1/2 opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 bg-black text-white text-xs px-2 py-1 rounded-md whitespace-nowrap">
                 {isDarkMode ? "Light Mode" : "Dark Mode"}
               </span>
