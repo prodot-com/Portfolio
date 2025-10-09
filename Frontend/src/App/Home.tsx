@@ -11,6 +11,13 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { Sun, House, Moon } from "lucide-react";
+import { Marquee } from "@/Components/magicui/marquee";
+// import TechStackMarquee from "@/Components/ui/TeachStack";
+import { MarqueeDemo } from "@/Components/ui/TeachStack";
+
+
+
+
 
 const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -206,7 +213,12 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="w-full min-h-[100px] mt-2"></div>
+          <MarqueeDemo/>
+          {/* <TechStackMarquee/> */}
+
+          <div className="w-full min-h-[250px] mt-2">
+           
+          </div>
 
           <div className="fixed flex justify-center border-2 w-[75%] md:w-auto md:min-w-[400px] left-1/2 -translate-x-1/2 bg-white/10 dark:bg-[#101112]/10 shadow-xl 
           border-gray-400 bottom-0 mb-4 md:mb-8 items-center gap-1 md:gap-2 p-2 px-2 md:px-4 cursor-pointer transition-all delay-200 ease-in-out rounded-3xl backdrop-blur-[7px] z-20">
