@@ -113,7 +113,7 @@ useEffect(() => {
                   probal
                 </h1>
                 <button onClick={toggleDarkMode} aria-label="Toggle Dark Mode">
-                  <AnimatedThemeToggler className="pt-1.5"/>
+                  <AnimatedThemeToggler className="pt-1.5 cursor-pointer"/>
                 </button>
               </div>
             </div>
@@ -205,7 +205,8 @@ useEffect(() => {
           </div>
 
           <div className="fixed flex justify-center border-2 w-[75%] md:w-auto md:min-w-[400px] left-1/2 -translate-x-1/2 bg-white/10 dark:bg-[#101112]/10 shadow-xl 
-          border-gray-400 bottom-0 mb-4 md:mb-8 items-center gap-1 md:gap-2 p-2 px-2 md:px-4 cursor-pointer transition-all delay-200 ease-in-out rounded-3xl backdrop-blur-[7px] z-20">
+          border-gray-400 bottom-0 mb-4 md:mb-8 items-center gap-1 md:gap-2 p-2 px-2 md:px-4 cursor-pointer transition-all delay-200 ease-in-out rounded-3xl 
+          backdrop-blur-[7px] z-20 hover:scale-105">
             <div className="relative group">
               <House
                 size={35}
@@ -267,7 +268,7 @@ useEffect(() => {
               onClick={toggleDarkMode}
               aria-label="Toggle Dark Mode"
             >
-              <AnimatedThemeToggler className="pt-1.5 pl-1.5"/>
+              <AnimatedThemeToggler className="pt-1.5 pl-1.5 px-1 py-1.5 hover:pl-3 rounded-full dark:hover:bg-[#262626] dark:text-white hover:bg-neutral-300 transition-all duration-300 ease-in-out cursor-pointer"/>
               <span className="absolute bottom-10 left-1/2 -translate-x-1/2 opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 bg-black text-white text-xs px-2 py-1 rounded-md whitespace-nowrap">
                 {isDarkMode ? "Light Mode" : "Dark Mode"}
               </span>
