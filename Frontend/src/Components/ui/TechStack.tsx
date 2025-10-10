@@ -53,7 +53,7 @@ const TechIcon = ({
 
 export function TechStackMarquee() {
   return (
-    <div className="relative mt-10 px-4 md:pl-6 flex flex-col gap-3 w-full max-w-5xl overflow-hidden">
+    <div className="relative mt-10 px-4 md:px-10 flex flex-col gap-3 w-full max-w-5xl overflow-hidden">
       <div>
         <p className="heading-font">Technologies I use</p>
       </div>
@@ -62,8 +62,8 @@ export function TechStackMarquee() {
           <TechIcon key={tech.name} {...tech} />
         ))}
       </Marquee>
-      <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-white dark:from-[hsl(0,3%,9%)] to-transparent pointer-events-none z-10" />
-      <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-white dark:from-[hsl(0,7%,9%)] to-transparent pointer-events-none z-10" />
+      <div className="absolute left-10 top-8 w-20 h-full bg-gradient-to-r from-white dark:from-[hsl(0,3%,9%)] to-transparent pointer-events-none z-10" />
+      <div className="absolute right-10 top-8 w-20 h-full bg-gradient-to-l from-white dark:from-[hsl(0,7%,9%)] to-transparent pointer-events-none z-10" />
     </div>
   )
 }

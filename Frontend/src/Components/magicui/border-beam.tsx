@@ -1,5 +1,5 @@
-import { motion} from "motion/react"
-import type { MotionStyle, Transition } from "motion/react"
+import { motion } from "motion/react"
+import  type{ MotionStyle, Transition } from "motion/react"
 
 import { cn } from "@/lib/utils"
 

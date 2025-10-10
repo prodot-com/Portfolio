@@ -172,9 +172,11 @@ useEffect(() => {
             </p>
           </div>
 
-          <div className="mt-10 px-4 md:pl-6 flex flex-col gap-3 w-full max-w-5xl">
+          <TechStackMarquee/>
+
+          <div className="mt-10 px-4 md:px-9 flex flex-col gap-3 w-full max-w-5xl">
             <div className="md:px-0">
-              <p className="font-bold text-black dark:text-white text-xl heading-font selection:bg-neutral-600">
+              <p className="font-bold text-black  dark:text-white text-xl heading-font selection:bg-neutral-600">
                 GitHub Contributions •{" "}
                 <span className="hover:underline decoration-green-500 cursor-pointer">
                   @prodot-com
@@ -183,11 +185,11 @@ useEffect(() => {
             </div>
 
             <div className="rounded-2xl p-[1.4px] animate-rotate-border bg-conic/[from_var(--border-angle)] dark:from-bg-neutral-900 via-green-500 dark:bg-neutral-900 from-80% via-90% to-100%">
-              <div className="relative px-5 py-3 rounded-2xl bg-white dark:bg-neutral-900 overflow-x-auto scrollbar-hide md:mx-0">
+              <div className="relative px-1 py-3 rounded-2xl bg-white dark:bg-neutral-900 overflow-x-auto scrollbar-hide md:mx-0">
                 <GitHubCalendar
                   username="prodot-com"
-                  blockSize={8}
-                  fontSize={11}
+                  blockSize={8.2}
+                  fontSize={12}
                   errorMessage="Error while fetching data"
                   showWeekdayLabels={true}
                   hideColorLegend={false}
@@ -200,8 +202,6 @@ useEffect(() => {
               </div>
             </div>
           </div>
-
-          <TechStackMarquee/>
 
           <div className="w-full min-h-[250px] mt-2">
                   
@@ -271,7 +271,7 @@ useEffect(() => {
               onClick={toggleDarkMode}
               aria-label="Toggle Dark Mode"
             >
-              <AnimatedThemeToggler className="pt-1.5 pl-1.5 px-1 py-1.5 hover:pl-3 rounded-full dark:hover:bg-[#262626] dark:text-white hover:bg-neutral-300 transition-all duration-300 ease-in-out cursor-pointer"/>
+              <AnimatedThemeToggler className="pt-1.5 pl-1.5 px-1 py-1.5 hover:ml-2 rounded-full dark:hover:bg-[#262626] dark:text-white hover:bg-neutral-300 transition-all duration-300 ease-in-out cursor-pointer"/>
               <span className="absolute bottom-10 left-1/2 -translate-x-1/2 opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 bg-black text-white text-xs px-2 py-1 rounded-md whitespace-nowrap">
                 {isDarkMode ? "Light Mode" : "Dark Mode"}
               </span>
