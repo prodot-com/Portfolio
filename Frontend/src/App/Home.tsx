@@ -13,6 +13,7 @@ import {
 import { Sun, House, Moon } from "lucide-react";
 import {TechStackMarquee } from "@/Components/ui/TechStack";
 import { AnimatedThemeToggler } from "@/Components/magicui/animated-theme-toggler";
+import { ScrollProgress } from "@/Components/magicui/scroll-progress";
 
 
 
@@ -38,7 +39,7 @@ useEffect(() => {
 
   return (
     // <div className="grid grid-cols-1 lg:grid-cols-4 bg-white dark:bg-neutral-900">
-    <div className="grid grid-cols-1 lg:grid-cols-4 items-stretch bg-white dark:bg-neutral-900 min-h-screen">
+    <div className="grid grid-cols-1 lg:grid-cols-4 items-stretch bg-white dark:bg-neutral-900 min-h-screen ">
       <div className="hidden lg:block">
         <div className="h-full w-full relative">
   <div
@@ -112,12 +113,14 @@ useEffect(() => {
                 <h1 className="cursor-pointer bitcount-double-ink hover:underline decoration-[#A22DA2] text-3xl tracking-tight transition delay-25">
                   probal
                 </h1>
-                <button onClick={toggleDarkMode} aria-label="Toggle Dark Mode">
-                  <AnimatedThemeToggler className="pt-1.5 cursor-pointer"/>
-                </button>
+                <div onClick={toggleDarkMode} aria-label="Toggle Dark Mode" className="mt-1">
+                  <AnimatedThemeToggler className="cursor-pointer p-2 border border-neutral-300 dark:border-gray-500 rounded-lg hover:bg-neutral-200 dark:hover:bg-neutral-800"/>
+                </div>
               </div>
             </div>
           </div>
+
+          <ScrollProgress className="fixed left-0 w-full h-[4px] bg-gradient-to-r from-green-500 via-purple-500 to-blue-500 z-40 transition-all duration-300" />
 
           <div className="relative w-full max-w-5xl mt-[70px] overflow-hidden">
             <img
@@ -201,7 +204,7 @@ useEffect(() => {
           <TechStackMarquee/>
 
           <div className="w-full min-h-[250px] mt-2">
-           
+                  
           </div>
 
           <div className="fixed flex justify-center border-2 w-[75%] md:w-auto md:min-w-[400px] left-1/2 -translate-x-1/2 bg-white/10 dark:bg-[#101112]/10 shadow-xl 

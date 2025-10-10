@@ -2,20 +2,20 @@ import { cn } from "@/lib/utils"
 import { Marquee } from "../magicui/marquee"
 
 const TachStack = [
-  { name: "JavaScript", category: "language", icon: "../../../public/techicons/javascript.svg", color: "bg-gray-500" },
-  { name: "TypeScript", category: "language", icon: "../../../public/techicons/typescript.svg", color: "bg-gray-500" },
-  { name: "Java", category: "language", icon: "../../../public/techicons/java.svg", color: "bg-gray-500" },
-  { name: "Python", category: "language", icon: "../../../public/techicons/python.svg", color: "bg-gray-500" },
-  { name: "React.js", category: "framework", icon: "../../../public/techicons/react.svg", color: "bg-gray-500" },
-  { name: "Express.js", category: "framework", icon: "../../../public/techicons/express.svg", color: "bg-gray-500" },
-  { name: "Node.js", category: "framework", icon: "../../../public/techicons/node.svg", color: "bg-gray-500" },
-  { name: "Tailwind CSS", category: "framework", icon: "../../../public/techicons/tailwind.svg", color: "bg-gray-500" },
-  { name: "MongoDB", category: "database", icon: "../../../public/techicons/mongodb.svg", color: "bg-gray-500" },
-  { name: "PostgreSQL", category: "database", icon: "../../../public/techicons/postgresql.svg", color: "bg-gray-500" },
-  { name: "Git", category: "tool", icon: "../../../public/techicons/git.svg", color: "bg-gray-500" },
-  { name: "Google Cloud", category: "tool", icon: "../../../public/techicons/google-cloud.svg", color: "bg-gray-500" },
-  { name: "Postman", category: "tool", icon: "../../../public/techicons/postman.svg", color: "bg-gray-500" },
-  { name: "Github", category: "tool", icon: "../../../public/techicons/github.svg", color: "bg-gray-500" },
+  { name: "JavaScript", category: "language", icon: "../../../public/techicons/javascript.svg" },
+  { name: "TypeScript", category: "language", icon: "../../../public/techicons/typescript.svg" },
+  { name: "Java", category: "language", icon: "../../../public/techicons/java.svg" },
+  { name: "Python", category: "language", icon: "../../../public/techicons/python.svg" },
+  { name: "React.js", category: "framework", icon: "../../../public/techicons/react.svg" },
+  { name: "Express.js", category: "framework", icon: "../../../public/techicons/express.svg" },
+  { name: "Node.js", category: "framework", icon: "../../../public/techicons/node.svg" },
+  { name: "Tailwind CSS", category: "framework", icon: "../../../public/techicons/tailwind.svg" },
+  { name: "MongoDB", category: "database", icon: "../../../public/techicons/mongodb.svg" },
+  { name: "PostgreSQL", category: "database", icon: "../../../public/techicons/postgresql.svg" },
+  { name: "Git", category: "tool", icon: "../../../public/techicons/git.svg" },
+  { name: "Google Cloud", category: "tool", icon: "../../../public/techicons/google-cloud.svg" },
+  { name: "Postman", category: "tool", icon: "../../../public/techicons/postman.svg" },
+  { name: "Github", category: "tool", icon: "../../../public/techicons/github.svg" },
 ];
 
 
@@ -23,13 +23,11 @@ const TachStack = [
 const TechIcon = ({
   icon,
   name,
-  category,
-  color,
+  category
 }: {
   icon: string
   name: string
   category: string
-  color: string
 }) => {
   return (
     <figure
@@ -42,7 +40,7 @@ const TechIcon = ({
       )}
     >
       <div className="flex flex-row items-center justify-center gap-3">
-        <img className="" width="35" height="35" alt="" src={icon} />
+        <img className="" width="35" height="35" alt="" src={icon}/>
         <div className="flex flex-col">
           <figcaption className="text-[12px] font-medium heading-font dark:text-white">
             {name}
