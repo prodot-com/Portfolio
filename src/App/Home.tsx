@@ -204,7 +204,7 @@ useEffect(() => {
             </div>
           </div>
 
-          <div className="border border-black px-2 mt-10 w-full max-w-5xl mt-2">
+          <div className="px-2 mt-10 w-full max-w-5xl">
                   <Projectcard/>
           </div>
 
