@@ -30,7 +30,7 @@ const TechIcon = ({
   return (
     <figure
       className={cn(
-        "relative h-full w-40 cursor-pointer overflow-hidden rounded-xl  p-4",
+        "relative h-full w-35 md:w-40 cursor-pointer overflow-hidden rounded-xl py-3 md:p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-200 hover:bg-gray-950/[.05]",
         // dark styles
@@ -60,8 +60,8 @@ export function TechStackMarquee() {
           <TechIcon key={tech.name} {...tech} />
         ))}
       </Marquee>
-      <div className="absolute left-10 top-8 w-20 h-full bg-gradient-to-r from-white dark:from-[hsl(0,3%,9%)] to-transparent pointer-events-none z-10" />
-      <div className="absolute right-10 top-8 w-20 h-full bg-gradient-to-l from-white dark:from-[hsl(0,7%,9%)] to-transparent pointer-events-none z-10" />
+      <div className="absolute left-3 top-8 md:left-10 md:top-8 w-20 h-full bg-gradient-to-r from-white dark:from-[hsl(0,3%,9%)] to-transparent pointer-events-none z-10" />
+      <div className="absolute right-3 md:right-10 md:top-8 top-8 w-20 h-full bg-gradient-to-l from-white dark:from-[hsl(0,7%,9%)] to-transparent pointer-events-none z-10" />
     </div>
   )
 }

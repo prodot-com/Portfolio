@@ -5,12 +5,11 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-  CardFooter
+  CardFooter,
 } from "@/Components/magicui/card";
 import { BorderBeam } from "../magicui/border-beam";
 import ReactMarkdown from "react-markdown";
 import { Github, Globe } from "lucide-react";
-
 
 type Project = {
   name: string;
@@ -23,7 +22,6 @@ type Project = {
   };
 };
 
-
 const projects: Project[] = [
   {
     name: "Cric-Scoreboard",
@@ -32,32 +30,41 @@ const projects: Project[] = [
     tools: ["React", "Node.js", "MongoDB", "Socket.IO", "Tailwind CSS"],
     image: "/cricScoreboard.png",
     link: {
-        "gitlink": "https://www.prasen.dev/",
-        "livelink": "live"
-    }
+      gitlink: "https://www.prasen.dev/",
+      livelink: "live",
+    },
   },
   {
-    name: "Portfolio Builder",
+    name: "SyncSpace",
     description:
-      "A portfolio generator with customizable themes and animations using **Next.js** and **Framer Motion**.",
-    tools: ["Next.js", "Framer Motion", "TailwindCSS"],
-    image: "/portfolio.png",
+      "A robust application built for streamlined team collaboration and administrative control. SyncSpace features secure user authentication, role-based access, comprehensive team and task management, and real-time notifications.",
+    tools: ["React", "Node.js", "MongoDB", "Git", "Tailwind CSS"],
+    image: "/syncSpace.png",
+    link: {
+      gitlink: "https://www.prasen.dev/",
+      livelink: "live",
+    },
   },
   {
-    name: "Task Manager",
+    name: "GigConnect",
     description:
-      "A productivity app to **track tasks, priorities, and progress** in real time.",
-    tools: ["React", "TypeScript", "Firebase"],
+      "A platform that connects clients with nearby freelancers for quick, skill-based gig hiring. Features include secure JWT authentication for dual roles, real-time chat with Socket.IO, review and rating system, and payment integrationy.",
+    tools: ["React", "Node.js", "Razorpay API"],
+    image: "/gigConnect.png",
+    link: {
+      gitlink: "https://www.prasen.dev/",
+      livelink: "live",
+    },
   },
 ];
 
 export function Projectcard() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 p-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 md:p-6 place-items-center">
       {projects.map((project, index) => (
         <Card
           key={`${project.name}-${index}`}
-          className="relative w-[350px] overflow-hidden bg-white/10 dark:bg-neutral-900 dark:border-neutral-800 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+          className="relative w-full max-w-sm overflow-hidden bg-white/10 dark:bg-neutral-900 dark:border-neutral-800 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
         >
           {/* Project Image */}
           {project.image && (
@@ -75,11 +82,8 @@ export function Projectcard() {
             </CardTitle>
 
             <div className="inter-font prose prose-sm dark:prose-invert text-[11px] max-w-none">
-                <ReactMarkdown>
-                    {project.description}
-                </ReactMarkdown>
+              <ReactMarkdown>{project.description}</ReactMarkdown>
             </div>
-
           </CardHeader>
 
           {/* Content */}
@@ -96,35 +100,33 @@ export function Projectcard() {
             </div>
           </CardContent>
 
-<CardFooter className="px-4 pt-4">
-  {project.link && (
-    <div className="flex items-center gap-3">
-      
-      {project.link.livelink && (
-        <a
-          href={project.link.livelink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-1 text-xs bg-black dark:bg-white text-white dark:text-black px-2 py-1 rounded-md border hover:bg-neutral-700 transition"
-        >
-          <Globe className="w-4 h-4" /> Live
-        </a>
-      )}
+          <CardFooter className="px-4 pt-4">
+            {project.link && (
+              <div className="flex items-center gap-3">
+                {project.link.livelink && (
+                  <a
+                    href={project.link.livelink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-xs bg-black dark:bg-white text-white dark:text-black px-2 py-1 rounded-md border hover:bg-neutral-700 transition"
+                  >
+                    <Globe className="w-4 h-4" /> Live
+                  </a>
+                )}
 
-      {project.link.gitlink && (
-        <a
-          href={project.link.gitlink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-1 text-xs bg-black dark:bg-white text-white dark:text-black px-2 py-1 rounded-md border hover:bg-neutral-700 transition"
-        >
-          <Github className="w-4 h-4" /> Source
-        </a>
-      )}
-    </div>
-  )}
-</CardFooter>
-
+                {project.link.gitlink && (
+                  <a
+                    href={project.link.gitlink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-xs bg-black dark:bg-white text-white dark:text-black px-2 py-1 rounded-md border hover:bg-neutral-700 transition"
+                  >
+                    <Github className="w-4 h-4" /> Source
+                  </a>
+                )}
+              </div>
+            )}
+          </CardFooter>
 
           {/* Animated Borders */}
           <BorderBeam
