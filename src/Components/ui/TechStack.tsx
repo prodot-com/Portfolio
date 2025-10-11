@@ -2,32 +2,30 @@ import { cn } from "@/lib/utils"
 import { Marquee } from "../magicui/marquee"
 
 const TachStack = [
-  { name: "JavaScript", category: "language", icon: "../../../public/techicons/javascript.svg" },
-  { name: "TypeScript", category: "language", icon: "../../../public/techicons/typescript.svg" },
-  { name: "Java", category: "language", icon: "../../../public/techicons/java.svg" },
-  { name: "Python", category: "language", icon: "../../../public/techicons/python.svg" },
-  { name: "React.js", category: "framework", icon: "../../../public/techicons/react.svg" },
-  { name: "Express.js", category: "framework", icon: "../../../public/techicons/express.svg" },
-  { name: "Node.js", category: "framework", icon: "../../../public/techicons/node.svg" },
-  { name: "Tailwind CSS", category: "framework", icon: "../../../public/techicons/tailwind.svg" },
-  { name: "MongoDB", category: "database", icon: "../../../public/techicons/mongodb.svg" },
-  { name: "PostgreSQL", category: "database", icon: "../../../public/techicons/postgresql.svg" },
-  { name: "Git", category: "tool", icon: "../../../public/techicons/git.svg" },
-  { name: "Google Cloud", category: "tool", icon: "../../../public/techicons/google-cloud.svg" },
-  { name: "Postman", category: "tool", icon: "../../../public/techicons/postman.svg" },
-  { name: "Github", category: "tool", icon: "../../../public/techicons/github.svg" },
+  { name: "JavaScript", category: "language", icon: "/techicons/javascript.svg" },
+  { name: "TypeScript", category: "language", icon: "/techicons/typescript.svg" },
+  { name: "Java", category: "language", icon: "/techicons/java.svg" },
+  { name: "Python", category: "language", icon: "/techicons/python.svg" },
+  { name: "React.js", category: "framework", icon: "/techicons/react.svg" },
+  { name: "Express.js", category: "framework", icon: "/techicons/express.svg" },
+  { name: "Node.js", category: "framework", icon: "/techicons/node.svg" },
+  { name: "Tailwind CSS", category: "framework", icon: "/techicons/tailwind.svg" },
+  { name: "MongoDB", category: "database", icon: "/techicons/mongodb.svg" },
+  { name: "PostgreSQL", category: "database", icon: "/techicons/postgresql.svg" },
+  { name: "Git", category: "tool", icon: "/techicons/git.svg" },
+  { name: "Google Cloud", category: "tool", icon: "/techicons/google-cloud.svg" },
+  { name: "Postman", category: "tool", icon: "/techicons/postman.svg" },
+  { name: "Github", category: "tool", icon: "/techicons/github.svg" },
 ];
 
 
 
 const TechIcon = ({
   icon,
-  name,
-  category
+  name
 }: {
   icon: string
   name: string
-  category: string
 }) => {
   return (
     <figure
