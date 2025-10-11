@@ -14,6 +14,7 @@ import { Sun, House, Moon } from "lucide-react";
 import {TechStackMarquee } from "@/Components/ui/TechStack";
 import { AnimatedThemeToggler } from "@/Components/magicui/animated-theme-toggler";
 import { ScrollProgress } from "@/Components/magicui/scroll-progress";
+import { Projectcard } from "@/Components/ui/ProjectCard";
 
 
 
@@ -203,8 +204,11 @@ useEffect(() => {
             </div>
           </div>
 
+          <div className="border border-black px-2 mt-10 w-full max-w-5xl mt-2">
+                  <Projectcard/>
+          </div>
+
           <div className="w-full min-h-[250px] mt-2">
-                  
           </div>
 
           <div className="fixed flex justify-center border-2 w-[75%] md:w-auto md:min-w-[400px] left-1/2 -translate-x-1/2 bg-white/10 dark:bg-[#101112]/10 shadow-xl 
