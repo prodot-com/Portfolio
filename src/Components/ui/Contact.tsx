@@ -14,7 +14,7 @@ export function Contact() {
   };
 
   return (
-    <section className="p-4 pt-0 rounded-lg flex flex-col gap-4">
+    <section className="p-4 pt-4 rounded-lg flex flex-col gap-4">
       <h2 className="font-bold text-2xl heading-font text-neutral-900 dark:text-neutral-100">
         Contact
       </h2>

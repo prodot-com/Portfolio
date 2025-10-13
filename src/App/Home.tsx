@@ -17,6 +17,7 @@ import { ScrollProgress } from "@/Components/magicui/scroll-progress";
 import { Projectcard } from "@/Components/ui/ProjectCard";
 import { EducationCard } from "@/Components/ui/Education";
 import { Contact } from "@/Components/ui/Contact";
+import { Experience } from "@/Components/ui/Experience";
 
 
 
@@ -109,16 +110,13 @@ useEffect(() => {
 
 
       <div className="col-span-1 lg:col-span-2">
-        <div className="flex flex-col items-center min-h-screen relative overflow-hidden">
+        <div className="flex flex-col border border-black items-center min-h-screen relative overflow-hidden">
           <div className="fixed top-0 left-0 w-full h-[70px] bg-white dark:bg-black shadow z-30 flex items-center justify-center">
             <div className="w-full max-w-3xl h-full px-4">
               <div className="h-full w-full flex justify-between items-center">
                 <h1 className="cursor-pointer bitcount-double-ink hover:underline decoration-[#A22DA2] text-3xl tracking-tight transition delay-25">
                   probal
                 </h1>
-                {/* <div onClick={toggleDarkMode} aria-label="Toggle Dark Mode" className="mt-1">
-                  <AnimatedThemeToggler className="cursor-pointer p-2 border border-neutral-300 dark:border-gray-500 rounded-lg hover:bg-neutral-200 dark:hover:bg-neutral-800"/>
-                </div> */}
               </div>
             </div>
           </div>
@@ -219,20 +217,27 @@ useEffect(() => {
             </div>
           </div>
 
-          <div className="px-2 mt-9 font-bold w-full max-w-5xl">
+          <div className="px-2  mt-9 font-bold w-full max-w-5xl">
             <p className="pl-8 heading-font text-xl">Featured Projects</p>
-                  <Projectcard/>
+                  <Projectcard />
           </div>
 
-          <div className="px-2 pl-5 md:pl-7 mt-2 font-bold w-full max-w-5xl">
+          <div className="px-2 pl-5 md:pl-11 mt-2 font-bold w-full max-w-5xl">
+          <Experience/>
+          </div>
+
+          <div className="px-2 pl-5 md:pl-11 mt-2 font-bold w-full max-w-5xl">
           <EducationCard/>
           </div>
 
-          <div className="heading-font pr-17 px-4 lg:ml-12 mt-8 z-20 w-full max-w-5xl border-t-2 border-neutral-500 dark:border-neutral-200 pt-4">
+          <div className="heading-font pr-17 px-4 lg:ml-12 mt-8 z-20 w-full max-w-5xl  border-neutral-500 dark:border-neutral-600 pt-4">
             <Contact/>
           </div>
 
-          <div className="w-full min-h-[250px] mt-2">
+          <div className="mt-7 pt-4 px-4 md:px-9 border-t-2 flex flex-col gap-3 w-full max-w-5xl min-h-[150px]">
+            <p className="p">
+              © 2025 Probal Ghosh. All rights reserved.
+            </p>
           </div>
 
           <div className="fixed flex justify-center border-2 w-[75%] md:w-auto md:min-w-[400px] left-1/2 -translate-x-1/2 bg-white/10 dark:bg-[#101112]/10 shadow-xl 
