@@ -32,7 +32,7 @@ export function Experience() {
   };
 
   return (
-    <section className="p-4 md:p-8 md:pl-0">
+    <section className="p-3 md:p-8 md:pl-0 md:pt-3">
       <p className="text-2xl font-bold heading-font mb-6 text-neutral-900 dark:text-white">
         Work Experience
       </p>
@@ -43,17 +43,18 @@ export function Experience() {
             {/* Top Row */}
             <div
               onClick={() => toggleDescription(index)}
-              className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 cursor-pointer group"
+              className="flex flex-row gap-7 sm:flex-row sm:items-center sm:justify-between sm:gap-3 cursor-pointer group"
             >
+              {/* Left: Icon + Company Info */}
               <div className="flex items-center gap-4">
                 <img
                   src={exp.icon}
                   alt={exp.company}
-                  className="w-12 h-12 rounded-full object-cover border border-neutral-300 dark:border-neutral-700"
+                  className="w-7 h-7 md:w-12 md:h-12 p-1 rounded-full object-cover border border-neutral-300 dark:border-neutral-700"
                 />
                 <div>
                   <div className="inline-flex items-center gap-1">
-                    <p className="font-semibold text-neutral-800 dark:text-neutral-200">
+                    <p className="font-semibold text-[14px] md:text-[16px] text-neutral-800 dark:text-neutral-200">
                       {exp.company}
                     </p>
                     <ChevronRight
@@ -67,9 +68,12 @@ export function Experience() {
                   </p>
                 </div>
               </div>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400 sm:text-right shrink-0">
-                {exp.startDate} - {exp.endDate}
-              </p>
+
+              {/* Right: Start/End Date Stack */}
+              <div className="flex flex-col sm:flex-row items-end text-right text-neutral-600 dark:text-neutral-400 text-sm">
+                <p className="font-medium">{exp.startDate}-</p>
+                <p className="font-medium">{exp.endDate}</p>
+              </div>
             </div>
 
             {/* Description (Animated Expand) */}
@@ -80,7 +84,7 @@ export function Experience() {
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="text-sm md:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed pl-[3.5rem] sm:pl-[4.5rem]"
+                  className="text-sm md:text-base font-normal text-neutral-700 dark:text-neutral-300 leading-relaxed pl-[3.5rem] sm:pl-[4.5rem] md:pr-4"
                 >
                   {exp.description}
                 </motion.p>

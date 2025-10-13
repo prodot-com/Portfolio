@@ -10,7 +10,7 @@ import {
   faXTwitter,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { House, Paperclip} from "lucide-react";
+import { House, Paperclip, Copyright} from "lucide-react";
 import {TechStackMarquee } from "@/Components/ui/TechStack";
 import { AnimatedThemeToggler } from "@/Components/magicui/animated-theme-toggler";
 import { ScrollProgress } from "@/Components/magicui/scroll-progress";
@@ -110,7 +110,7 @@ useEffect(() => {
 
 
       <div className="col-span-1 lg:col-span-2">
-        <div className="flex flex-col border border-black items-center min-h-screen relative overflow-hidden">
+        <div className="flex flex-col items-center min-h-screen relative overflow-hidden">
           <div className="fixed top-0 left-0 w-full h-[70px] bg-white dark:bg-black shadow z-30 flex items-center justify-center">
             <div className="w-full max-w-3xl h-full px-4">
               <div className="h-full w-full flex justify-between items-center">
@@ -217,26 +217,26 @@ useEffect(() => {
             </div>
           </div>
 
-          <div className="px-2  mt-9 font-bold w-full max-w-5xl">
+          <div className="px-2 mt-9 font-bold w-full max-w-5xl">
             <p className="pl-8 heading-font text-xl">Featured Projects</p>
                   <Projectcard />
           </div>
 
-          <div className="px-2 pl-5 md:pl-11 mt-2 font-bold w-full max-w-5xl">
+          <div className="px-2 pl-3 md:pl-11 mt-3 font-bold w-full max-w-5xl">
           <Experience/>
           </div>
 
-          <div className="px-2 pl-5 md:pl-11 mt-2 font-bold w-full max-w-5xl">
+          <div className="px-2 pl-3 md:pl-11 mt-3 font-bold w-full max-w-5xl">
           <EducationCard/>
           </div>
 
-          <div className="heading-font pr-17 px-4 lg:ml-12 mt-8 z-20 w-full max-w-5xl  border-neutral-500 dark:border-neutral-600 pt-4">
+          <div className="heading-font sm:pr-17 px-4 lg:ml-14 mt-2 sm:mt-1 z-20 w-full max-w-5xl  border-neutral-500 dark:border-neutral-600 pt-4">
             <Contact/>
           </div>
 
-          <div className="mt-7 pt-4 px-4 md:px-9 border-t-2 flex flex-col gap-3 w-full max-w-5xl min-h-[150px]">
-            <p className="p">
-              © 2025 Probal Ghosh. All rights reserved.
+          <div className="mt-7 pt-5 pl-4 md:px-9 border-t-1 dark:border-neutral-700 flex flex-col gap-3 w-full max-w-5xl min-h-[170px]">
+            <p className="pl-2 flex items-center gap-1">
+              <Copyright className="w-5"/> 2025 Probal Ghosh. All rights reserved.
             </p>
           </div>
 
