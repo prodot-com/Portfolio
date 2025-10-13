@@ -10,6 +10,7 @@ import {
 import { BorderBeam } from "../magicui/border-beam";
 import ReactMarkdown from "react-markdown";
 import { Github, Globe } from "lucide-react";
+import { ShinyButton } from "../magicui/shiny-button";
 
 type Project = {
   name: string;
@@ -60,11 +61,12 @@ const projects: Project[] = [
 
 export function Projectcard() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 md:p-6 place-items-center">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 md:px-8 place-items-center">
+      
       {projects.map((project, index) => (
         <Card
           key={`${project.name}-${index}`}
-          className="relative w-full max-w-sm overflow-hidden bg-white/10 dark:bg-neutral-900 dark:border-neutral-800 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+          className="relative w-full max-w-sm overflow-hidden bg-white/10 dark:bg-black dark:border-neutral-800 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
         >
           {/* Project Image */}
           {project.image && (
@@ -143,6 +145,8 @@ export function Projectcard() {
           />
         </Card>
       ))}
+      {/* <ShinyButton className="">
+        All Projects</ShinyButton> */}
     </div>
   );
 }

@@ -10,11 +10,12 @@ import {
   faXTwitter,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { Sun, House, Moon } from "lucide-react";
+import { House, Paperclip} from "lucide-react";
 import {TechStackMarquee } from "@/Components/ui/TechStack";
 import { AnimatedThemeToggler } from "@/Components/magicui/animated-theme-toggler";
 import { ScrollProgress } from "@/Components/magicui/scroll-progress";
 import { Projectcard } from "@/Components/ui/ProjectCard";
+import { EducationCard } from "@/Components/ui/Education";
 
 
 
@@ -114,9 +115,9 @@ useEffect(() => {
                 <h1 className="cursor-pointer bitcount-double-ink hover:underline decoration-[#A22DA2] text-3xl tracking-tight transition delay-25">
                   probal
                 </h1>
-                <div onClick={toggleDarkMode} aria-label="Toggle Dark Mode" className="mt-1">
+                {/* <div onClick={toggleDarkMode} aria-label="Toggle Dark Mode" className="mt-1">
                   <AnimatedThemeToggler className="cursor-pointer p-2 border border-neutral-300 dark:border-gray-500 rounded-lg hover:bg-neutral-200 dark:hover:bg-neutral-800"/>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -146,12 +147,25 @@ useEffect(() => {
               alt="Profile"
               className="w-28 h-28 md:w-35 md:h-35 rounded-full border-4 border-white dark:border-neutral-600 shadow-xl mb-4 object-cover md:ml-4"
             />
-            <div>
-              <h2 className="heading-font text-black dark:text-white text-3xl md:text-4xl font-semibold tracking-tight">
+            <div className="">
+              <div className="w-full md:w-auto flex justify-between mr-12">
+                  <h2 className="heading-font text-black dark:text-white text-3xl md:text-4xl font-semibold tracking-tight">
                 Probal Ghosh
               </h2>
+
+              <div className="relative group">
+              <Paperclip
+                size={35}
+                className="px-1 py-1.5 cursor-pointer rounded-full dark:hover:bg-[#262626] dark:text-white hover:bg-neutral-300 transition-all duration-300 ease-in-out"
+              />
+              <span className="absolute bottom-13 left-1/2 -translate-x-1/2 opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 bg-black text-white text-xs px-2 py-1 rounded-md whitespace-nowrap">
+                Resume
+              </span>
+            </div>
+            </div>
+              
               <p className="heading-font dark:text-neutral-500 text-neutral-600 text-sm md:text-[16px] mt-1">
-                22 • engineer • fullstack developer
+                21 • engineer • fullstack developer
               </p>
             </div>
           </div>
@@ -204,8 +218,13 @@ useEffect(() => {
             </div>
           </div>
 
-          <div className="px-2 mt-10 w-full max-w-5xl">
+          <div className="px-2 mt-9 font-bold w-full max-w-5xl">
+            <p className="pl-8 heading-font text-xl">Featured Projects</p>
                   <Projectcard/>
+          </div>
+
+          <div className="px-2 pl-5 md:pl-7 mt-2 font-bold w-full max-w-5xl">
+          <EducationCard/>
           </div>
 
           <div className="w-full min-h-[250px] mt-2">
