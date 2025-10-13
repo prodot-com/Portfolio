@@ -16,6 +16,7 @@ import { AnimatedThemeToggler } from "@/Components/magicui/animated-theme-toggle
 import { ScrollProgress } from "@/Components/magicui/scroll-progress";
 import { Projectcard } from "@/Components/ui/ProjectCard";
 import { EducationCard } from "@/Components/ui/Education";
+import { Contact } from "@/Components/ui/Contact";
 
 
 
@@ -225,6 +226,10 @@ useEffect(() => {
 
           <div className="px-2 pl-5 md:pl-7 mt-2 font-bold w-full max-w-5xl">
           <EducationCard/>
+          </div>
+
+          <div className="heading-font pr-17 px-4 lg:ml-12 mt-8 z-20 w-full max-w-5xl border-t-2 border-neutral-500 dark:border-neutral-200 pt-4">
+            <Contact/>
           </div>
 
           <div className="w-full min-h-[250px] mt-2">

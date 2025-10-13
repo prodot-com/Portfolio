@@ -32,7 +32,7 @@ const educations: Education[] = [
 
 export function EducationCard() {
   return (
-    <div className="p-2 md:p-4">
+    <div className="p-2  md:p-4">
       <p className="text-xl heading-font font-bold mb-2 md:mb-4">Education</p>
 
       <div className="flex flex-col">
