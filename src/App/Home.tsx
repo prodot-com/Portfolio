@@ -235,7 +235,7 @@ useEffect(() => {
           </div>
 
           <div className="mt-7 pt-5 pl-4 md:px-9 border-t-1 dark:border-neutral-700 flex flex-col gap-3 w-full max-w-5xl min-h-[170px]">
-            <p className="pl-2 flex items-center gap-1">
+            <p className="pl-2 flex items-center gap-1 inter-font">
               <Copyright className="w-5"/> 2025 Probal Ghosh. All rights reserved.
             </p>
           </div>
