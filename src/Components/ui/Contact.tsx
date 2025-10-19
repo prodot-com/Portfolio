@@ -17,7 +17,7 @@ export function Contact() {
 
   return (
     <section className="p-4 w-full pt-0 md:pl-0 md:pt-0 rounded-lg flex flex-col gap-4">
-      <h2 className="font-bold text-2xl heading-font text-neutral-900 dark:text-neutral-100">
+      <h2 className="font-bold text-[15px] md:text-xl heading-font text-neutral-900 dark:text-neutral-100">
         Contact
       </h2>
       <p className="inter-font text-neutral-600 dark:text-neutral-400">
