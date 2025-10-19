@@ -176,7 +176,7 @@ useEffect(() => {
               </p>
             </div>
 
-            <p className="text-black text-[15px] dark:text-neutral-400">
+            <p className="text-black text-[12px] md:text-[15px] dark:text-neutral-400">
               Hello! I'm a developer from Kolkata, India. I enjoy programming and
               exploring technology. Currently working on my own projects.{" "}
               <span className="font-bold dark:text-neutral-200">
@@ -190,7 +190,7 @@ useEffect(() => {
 
           <div className="mt-10 px-4 md:px-9 flex flex-col gap-3 w-full max-w-5xl">
             <div className="md:px-0">
-              <p className="font-bold text-black  dark:text-white text-xl heading-font selection:bg-neutral-600">
+              <p className="font-bold text-black  dark:text-white text-[15px] md:text-xl heading-font selection:bg-neutral-600">
                 GitHub Contributions •{" "}
                 <span className="hover:underline decoration-green-500 cursor-pointer">
                   @prodot-com
@@ -218,7 +218,7 @@ useEffect(() => {
           </div>
 
           <div className="px-2 mt-9 font-bold w-full max-w-5xl">
-            <p className="pl-8 heading-font text-xl">Featured Projects</p>
+            <p className="pl-8 heading-font  md:text-xl">Featured Projects</p>
                   <Projectcard />
           </div>
 
@@ -226,7 +226,7 @@ useEffect(() => {
           <Experience/>
           </div>
 
-          <div className="px-2 pl-3 md:pl-11 mt-3 font-bold w-full max-w-5xl">
+          <div className="px-2 pl-3 md:pl-11 mt-1 font-bold w-full max-w-5xl">
           <EducationCard/>
           </div>
 
