@@ -68,7 +68,7 @@ export function Projectcard() {
           )}
 
           {/* Header */}
-          <CardHeader className="px-3 pt-1">
+          <CardHeader className="px-3 md:pt-1">
             <CardTitle className="text-lg font-semibold">
               {project.name}
             </CardTitle>
@@ -79,7 +79,7 @@ export function Projectcard() {
           </CardHeader>
 
           {/* Content */}
-          <CardContent className="px-4 pt-2">
+          <CardContent className="px-3 md:px-4 pt-1 md:pt-2">
             <div className="flex flex-wrap gap-2">
               {project.tools.map((tool) => (
                 <span
@@ -92,7 +92,7 @@ export function Projectcard() {
             </div>
           </CardContent>
 
-          <CardFooter className="px-4 pt-4">
+          <CardFooter className=" px-3 md:px-4 pt-3 md:pt-4">
             {project.link && (
               <div className="flex items-center gap-3">
                 {project.link.livelink && (

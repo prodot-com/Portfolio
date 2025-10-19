@@ -192,8 +192,9 @@ useEffect(() => {
             <div className="md:px-0">
               <p className="font-bold text-black  dark:text-white text-[15px] md:text-xl heading-font selection:bg-neutral-600">
                 GitHub Contributions •{" "}
-                <span className="hover:underline decoration-green-500 cursor-pointer">
-                  @prodot-com
+                <span className="underline md:hover:underline decoration-green-500 cursor-pointer">
+                  <a href="https://github.com/prodot-com"
+                  target="blank">@prodot-com</a>
                 </span>
               </p>
             </div>
@@ -217,7 +218,7 @@ useEffect(() => {
             </div>
           </div>
 
-          <div className="px-2 mt-9 font-bold w-full max-w-5xl">
+          <div className="px-0 md:px-2 mt-9 font-bold w-full max-w-5xl">
             <p className="pl-8 heading-font text-[15px] md:text-xl">Featured Projects</p>
                   <Projectcard />
           </div>

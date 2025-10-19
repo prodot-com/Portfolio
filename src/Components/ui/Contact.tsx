@@ -1,6 +1,5 @@
-import { Mail, Copy, Check } from "lucide-react";
+import { Copy, Check } from "lucide-react";
 import { useState } from "react";
-import { RainbowButton } from "../magicui/rainbow-button";
 import { RainbowButtonCustom } from "./RainbowButton";
 
 export function Contact() {
