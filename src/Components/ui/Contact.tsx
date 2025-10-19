@@ -35,7 +35,7 @@ export function Contact() {
           ) : (
             <Copy className="w-4 h-4" />
           )}
-          <span>{copied ? 'Copied!' : email}</span>
+          <span>{email}</span>
         </button>
       </div>
     </section>
