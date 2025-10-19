@@ -218,7 +218,7 @@ useEffect(() => {
           </div>
 
           <div className="px-2 mt-9 font-bold w-full max-w-5xl">
-            <p className="pl-8 heading-font  md:text-xl">Featured Projects</p>
+            <p className="pl-8 heading-font text-[15px] md:text-xl">Featured Projects</p>
                   <Projectcard />
           </div>
 
