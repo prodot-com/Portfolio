@@ -46,17 +46,7 @@ const projects: Project[] = [
       livelink: "live",
     },
   },
-  {
-    name: "GigConnect",
-    description:
-      "A platform that connects clients with nearby freelancers for quick, skill-based gig hiring. Features include secure JWT authentication for dual roles, real-time chat with Socket.IO, review and rating system, and payment integrationy.",
-    tools: ["React", "Node.js", "Razorpay API"],
-    image: "/gigConnect.png",
-    link: {
-      gitlink: "https://www.prasen.dev/",
-      livelink: "live",
-    },
-  },
+  
 ];
 
 export function Projectcard() {
