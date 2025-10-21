@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import profile from "../../assets/profile.jpg";
 import GitHubCalendar from "react-github-calendar";
 import pro2 from "../../assets/pro2.jpg";
 import hero1 from "../../assets/hero1.jpg";
@@ -18,12 +17,14 @@ import { Projectcard } from "@/Components/ui/ProjectCard";
 import { EducationCard } from "@/Components/ui/Education";
 import { Contact } from "@/Components/ui/Contact";
 import { Experience } from "@/Components/ui/Experience";
+import { useNavigate } from "react-router-dom";
 
 
 
 
 
 const Home = () => {
+  const navigate = useNavigate()
   const [isDarkMode, setIsDarkMode] = useState(false);
 
 useEffect(() => {
@@ -155,6 +156,7 @@ useEffect(() => {
               <div className="relative group">
               <Paperclip
                 size={35}
+                onClick={()=>navigate("/resume")}
                 className="px-1 py-1.5 cursor-pointer rounded-full dark:hover:bg-[#262626] dark:text-white hover:bg-neutral-300 transition-all duration-300 ease-in-out"
               />
               <span className="absolute bottom-13 left-1/2 -translate-x-1/2 opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 bg-black text-white text-xs px-2 py-1 rounded-md whitespace-nowrap">
