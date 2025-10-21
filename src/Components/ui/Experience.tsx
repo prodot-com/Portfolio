@@ -32,12 +32,12 @@ export function Experience() {
   };
 
   return (
-    <section className="p-3 md:p-8 md:pl-0 md:pt-3">
+    <section className="px-3 md:px-8 md:pl-0 md:pt-3 pb-6 md:pb-5">
       <p className="text-[15px] md:text-xl font-bold heading-font mb-6 text-neutral-900 dark:text-white">
         Work Experience
       </p>
 
-      <div className="space-y-10">
+      <div className="space-y-7">
         {experiences.map((exp, index) => (
           <div key={index} className="flex flex-col gap-2">
             {/* Top Row */}

@@ -30,12 +30,12 @@ const educations: EducationItem[] = [
 
 export function EducationCard() {
   return (
-    <section className="p-3 md:p-8 md:pl-0 md:pt-3">
+    <section className="px-3 md:px-8 md:pl-0 md:pt-3 md:pb-4">
       <p className="text-[15px] md:text-xl font-bold heading-font mb-6 text-neutral-900 dark:text-white">
         Education
       </p>
 
-      <div className="space-y-10">
+      <div className="space-y-7">
         {educations.map((edu, index) => (
           <div key={index} className="flex flex-col gap-2">
             {/* Top Row */}

@@ -20,7 +20,7 @@ export function Contact() {
         Contact
       </h2>
       <p className="inter-font text-neutral-600 dark:text-neutral-400">
-        Always open to discussing new projects, creative ideas, or opportunities. Feel free to reach out!
+        Always open to discussing new projects, creative ideas, or opportunities. <span className="">Feel free</span> to reach out!
       </p>
       <div className="flex flex-col sm:flex-row gap-7 mt-2">
 

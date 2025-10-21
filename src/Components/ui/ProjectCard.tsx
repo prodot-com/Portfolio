@@ -84,7 +84,7 @@ export function Projectcard() {
               {project.tools.map((tool) => (
                 <span
                   key={tool}
-                  className="text-xs font-semibold bg-neutral-200 dark:bg-neutral-800 text-gray-800 dark:text-white px-2 py-1 rounded-md border"
+                  className="text-xs font-normal bg-neutral-200 dark:bg-neutral-800 text-gray-800 dark:text-white px-2 py-1 rounded-md border"
                 >
                   {tool}
                 </span>
