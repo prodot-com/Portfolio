@@ -70,7 +70,8 @@ export function EducationCard() {
 
               {/* Right: Start/End Date Stack */}
               <div className="flex flex-col sm:flex-row items-end text-right text-neutral-600 dark:text-neutral-400 text-sm">
-                <p className="font-medium">{edu.startDate} - </p>
+                <p className="font-medium">{edu.startDate}</p>
+                <p className="px-1 md:inline hidden">-</p>
                 <p className="font-medium">{edu.endDate}</p>
               </div>
             </div>
