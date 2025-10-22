@@ -113,32 +113,18 @@ const Resume = () => {
                 </li>
               </ul>
               <p className="mt-2 text-sm">
-                <span className="font-semibold">Tech Stack:</span> React.js, Express.js, Socket.IO, JavaScript, CSS, React Router
+                <span className="font-semibold">Tech Stack:</span> React.js, Express.js, Socket.IO, Tailwind CSS
               </p>
               <p className="text-sm">
                 <span className="font-semibold">GitHub Repo:</span>{" "}
-                <a href="#" className="text-blue-600 hover:underline">
+                <a href="https://github.com/prodot-com/Cric-Scoreboard" target="blank" className="text-blue-600 hover:underline">
                   Link
                 </a>
               </p>
             </div>
 
             <div>
-              <p className="font-bold text-base">Educational Website</p>
-              <ul className="list-disc list-inside text-sm mt-2 space-y-1">
-                <li>
-                  Built a responsive educational website offering structured academic resources.
-                </li>
-              </ul>
-              <p className="mt-2 text-sm">
-                <span className="font-semibold">Tech Stack:</span> JavaScript, React, CSS
-              </p>
-              <p className="text-sm">
-                <span className="font-semibold">Live Link:</span>{" "}
-                <a href="#" className="text-blue-600 hover:underline">
-                  Link
-                </a>
-              </p>
+              
             </div>
           </section>
 
