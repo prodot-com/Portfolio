@@ -42,7 +42,7 @@ const Resume = () => {
           {/* NAME & CONTACT */}
           <div className="text-center mb-6">
             <h1 className="text-3xl font-bold tracking-tight">Probal Ghosh</h1>
-            <div className="mt-2 flex flex-wrap justify-center items-center gap-x-3 gap-y-1 text-sm text-blue-600">
+            <div className="mt-2 font-semibold flex flex-wrap justify-center items-center gap-x-2 gap-y-1 text-sm text-blue-600">
               <a href="tel:+919775757648" className="hover:underline">
                 +91 9775757648
               </a>
@@ -51,15 +51,15 @@ const Resume = () => {
                 xprobal52@gmail.com
               </a>
               <span>|</span>
-              <a href="#" className="hover:underline">
+              <a href="https://www.linkedin.com/in/ghoshprobal/" target="blank" className="hover:underline">
                 LinkedIn
               </a>
               <span>|</span>
-              <a href="#" className="hover:underline">
+              <a href="https://github.com/prodot-com" target="blank" className="hover:underline">
                 GitHub
               </a>
               <span>|</span>
-              <a href="#" className="hover:underline">
+              <a href="https://x.com/exe__pro" target="blank" className="hover:underline">
                 Twitter
               </a>
             </div>
@@ -85,18 +85,6 @@ const Resume = () => {
               <div className="text-sm sm:text-right mt-1 sm:mt-0">
                 <p>Serampore, West Bengal</p>
                 <p>Sep. 2023 - 2027</p>
-              </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row justify-between">
-              <div>
-                <p className="font-semibold">
-                  Sargachi Ramakrishna Mission High School
-                </p>
-                <p className="italic text-sm">Grade: 90%</p>
-              </div>
-              <div className="text-sm sm:text-right mt-1 sm:mt-0">
-                <p>West Bengal</p>
               </div>
             </div>
           </section>
@@ -174,6 +162,9 @@ const Resume = () => {
             </div>
           </section>
         </div>
+      </div>
+
+      <div className="min-h-[100px]">
       </div>
 
           <div className="fixed flex justify-center border-2 w-[75%] md:w-auto md:min-w-[400px] left-1/2 -translate-x-1/2 bg-white/10 dark:bg-[#101112]/10 shadow-xl 
