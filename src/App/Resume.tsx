@@ -92,14 +92,14 @@ const Resume = () => {
           <hr className="border-gray-300 dark:border-neutral-700 my-5" />
 
           {/* PROJECTS */}
-          <section className="mb-6">
+          <section className="mb-6 ">
             <h2 className="uppercase font-semibold text-gray-700 dark:text-gray-300 tracking-widest text-sm mb-3 border-b border-gray-300 dark:border-neutral-700 pb-1">
               Projects
             </h2>
 
-            <div className="mb-5">
+            <div className="mb-5 ">
               <p className="font-bold text-base">
-                Cric Scoreboard – Live Cricket Scoring App
+                Cric-Scoreboard – Live Cricket Scoring App
               </p>
               <ul className="list-disc list-inside text-sm mt-2 space-y-1">
                 <li>
