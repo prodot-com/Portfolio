@@ -19,7 +19,7 @@ export function Contact() {
       <h2 className="font-bold text-[15px] md:text-xl heading-font text-neutral-900 dark:text-neutral-100">
         Contact
       </h2>
-      <p className="inter-font text-neutral-600 dark:text-neutral-400">
+      <p className="inter-font text-[13px] sm:text-[16px] text-neutral-600 dark:text-neutral-400">
         Always open to discussing new projects, creative ideas, or opportunities. <span className="">Feel free</span> to reach out!
       </p>
       <div className="flex flex-col sm:flex-row gap-7 mt-2">
@@ -35,7 +35,7 @@ export function Contact() {
           ) : (
             <Copy className="w-4 h-4" />
           )}
-          <span>{email}</span>
+          <span className="">{email}</span>
         </button>
       </div>
     </section>

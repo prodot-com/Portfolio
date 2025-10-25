@@ -62,7 +62,7 @@ export function EducationCard() {
                     <ChevronRight className="w-4 text-neutral-800 dark:text-neutral-200 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-transform duration-200" />
                   </div>
 
-                  <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                  <p className="text-sm inter-font text-neutral-500 dark:text-neutral-400">
                     {edu.subname}
                   </p>
                 </div>
@@ -70,9 +70,9 @@ export function EducationCard() {
 
               {/* Right: Start/End Date Stack */}
               <div className="flex flex-col sm:flex-row items-end text-right text-neutral-600 dark:text-neutral-400 text-sm">
-                <p className="font-medium">{edu.startDate}</p>
+                <p className="font-medium inter-font">{edu.startDate}</p>
                 <p className="px-1 md:inline hidden">-</p>
-                <p className="font-medium">{edu.endDate}</p>
+                <p className="font-medium inter-font">{edu.endDate}</p>
               </div>
             </div>
           </div>

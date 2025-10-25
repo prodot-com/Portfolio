@@ -111,7 +111,9 @@ useEffect(() => {
           <div className="fixed top-0 left-0 w-full h-[70px] bg-white dark:bg-black shadow z-30 flex items-center justify-center">
             <div className="w-full max-w-3xl h-full px-4">
               <div className="h-full w-full flex justify-between items-center">
-                <h1 className="cursor-pointer bitcount-double-ink hover:underline decoration-[#A22DA2] text-3xl tracking-tight transition delay-25">
+                <h1
+                onClick={()=>navigate(0)}
+                className="cursor-pointer bitcount-double-ink hover:underline decoration-[#A22DA2] text-3xl tracking-tight transition delay-25">
                   probal
                 </h1>
               </div>
@@ -235,7 +237,8 @@ useEffect(() => {
 
           <div className="mt-7 pt-5 pl-4 md:px-9 border-t-1 dark:border-neutral-700 flex flex-col gap-3 w-full max-w-5xl min-h-[170px]">
             <p className="pl-2 flex items-center gap-1 inter-font">
-              <Copyright className="w-5"/> 2025 Probal Ghosh. All rights reserved.
+              <Copyright className="w-4 sm:w-5"/> 
+              <p className="text-[15px] sm:text-[17px]">2025 Probal Ghosh. All rights reserved.</p>
             </p>
           </div>
 

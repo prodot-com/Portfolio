@@ -10,7 +10,7 @@ export function RainbowButtonCustom() {
       className="flex items-center gap-2"
     >
       <Mail className="w-4 h-4" />
-      <span>Mail</span>
+      <span >Mail</span>
     </RainbowButton>
   );
 }
