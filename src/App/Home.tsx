@@ -134,12 +134,12 @@ useEffect(() => {
             <div className="absolute bottom-0 top-0 left-0 w-[70px] bg-gradient-to-r from-white dark:from-neutral-900 to-transparent"></div>
             <div className="absolute bottom-0 top-0 right-0 w-[70px] bg-gradient-to-l from-white dark:from-neutral-900 to-transparent"></div>
 
-            <div className="absolute inset-0 flex items-center font-bold justify-center text-white dark:text-black italic text-xl md:text-2xl heading-font">
+            <div className="absolute inset-0 flex items-center font-bold justify-center text-white dark:text-black selection:bg-neutral-400 italic text-xl md:text-2xl heading-font">
               Build anything.
             </div>
           </div>
 
-          <div className="w-full max-w-5xl mt-[-56px] md:mt-[-72px] px-4 lg:ml-12 z-20">
+          <div className="selection:bg-neutral-700 w-full max-w-5xl mt-[-56px] md:mt-[-72px] px-4 lg:ml-12 z-20">
             <img
               src={pro2}
               alt="Profile"
@@ -147,7 +147,7 @@ useEffect(() => {
             />
             <div className="">
               <div className="w-full md:w-auto flex justify-between mr-12">
-                  <h2 className="heading-font text-black dark:text-white text-3xl md:text-4xl font-semibold tracking-tight">
+                  <h2 className="heading-font text-black dark:text-white selection:bg-neutral-700 text-3xl md:text-4xl font-semibold tracking-tight">
                 Probal Ghosh
               </h2>
 
@@ -171,12 +171,12 @@ useEffect(() => {
 
           <div className="heading-font w-full pr-17 max-w-5xl px-4 lg:ml-12 mt-10 z-20">
             <div className="flex">
-              <p className="font-bold text-2xl text-black dark:text-white">
+              <p className="selection:bg-neutral-700 font-bold text-2xl text-black dark:text-white">
                 About
               </p>
             </div>
 
-            <p className="text-black text-[12px] md:text-[15px] dark:text-neutral-400">
+            <p className="selection:bg-neutral-700 text-black text-[12px] md:text-[15px] dark:text-neutral-400">
               Hello! I'm a developer from Kolkata, India. I enjoy programming and
               exploring technology. Currently working on my own projects.{" "}
               <span className="font-bold dark:text-neutral-200">
@@ -188,7 +188,7 @@ useEffect(() => {
 
           <TechStackMarquee/>
 
-          <div className="mt-10 px-4 md:px-9 flex flex-col gap-3 w-full max-w-5xl">
+          <div className="selection:bg-neutral-700 mt-10 px-4 md:px-9 flex flex-col gap-3 w-full max-w-5xl">
             <div className="md:px-0">
               <p className="font-bold text-black  dark:text-white text-[15px] md:text-xl heading-font selection:bg-neutral-600">
                 GitHub Contributions •{" "}
@@ -218,24 +218,24 @@ useEffect(() => {
             </div>
           </div>
 
-          <div className="px-0 md:px-2 mt-9 font-bold w-full max-w-5xl">
+          <div className="selection:bg-neutral-700 px-0 md:px-2 mt-9 font-bold w-full max-w-5xl">
             <p className="pl-8 heading-font text-[15px] md:text-xl">Featured Projects</p>
                   <Projectcard />
           </div>
 
-          <div className="px-2 pl-3 md:pl-11 mt-3 font-bold w-full max-w-5xl">
+          <div className="selection:bg-neutral-700 px-2 pl-3 md:pl-11 mt-3 font-bold w-full max-w-5xl">
           <Experience/>
           </div>
 
-          <div className="px-2 pl-3 md:pl-11 mt-1 font-bold w-full max-w-5xl">
+          <div className="selection:bg-neutral-700 px-2 pl-3 md:pl-11 mt-1 font-bold w-full max-w-5xl">
           <EducationCard/>
           </div>
 
-          <div className="heading-font sm:pr-17 px-4 lg:ml-14 mt-2 sm:mt-1 z-20 w-full max-w-5xl  border-neutral-500 dark:border-neutral-600 pt-4">
+          <div className="selection:bg-neutral-700 heading-font sm:pr-17 px-4 lg:ml-14 mt-2 sm:mt-1 z-20 w-full max-w-5xl  border-neutral-500 dark:border-neutral-600 pt-4">
             <Contact/>
           </div>
 
-          <div className="mt-7 pt-5 pl-4 md:px-9 border-t-1 dark:border-neutral-700 flex flex-col gap-3 w-full max-w-5xl min-h-[170px]">
+          <div className="selection:bg-neutral-700 mt-7 pt-5 pl-4 md:px-9 border-t-1 dark:border-neutral-700 flex flex-col gap-3 w-full max-w-5xl min-h-[170px]">
             <p className="pl-2 flex items-center gap-1 inter-font">
               <Copyright className="w-4 sm:w-5"/> 
               <p className="text-[15px] sm:text-[17px]">2025 Probal Ghosh. All rights reserved.</p>
