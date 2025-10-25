@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 import { GithUbLink, LinkedInLink, XLink } from "@/lib/SocialLinks";
 
 
-const BottomNavbar = () => {
+const BottomNavbar = ({className = ""}) => {
     const [isDarkMode, setIsDarkMode] = useState(false);
     const navigate = useNavigate()
     
@@ -31,9 +31,9 @@ const BottomNavbar = () => {
         setIsDarkMode((prevMode) => !prevMode);
       };
   return (
-    <div className="fixed flex justify-center border-2 w-[75%] md:w-auto md:min-w-[400px] left-1/2 -translate-x-1/2 bg-white/10 dark:bg-[#101112]/10 shadow-xl 
+    <div className={`fixed flex justify-center border-2 w-[75%] md:w-auto md:min-w-[400px] left-1/2 -translate-x-1/2 bg-white/10 dark:bg-[#101112]/10 shadow-xl 
   border-gray-400 bottom-0 mb-4 md:mb-8 items-center gap-2 p-2 px-4 cursor-pointer transition-all duration-300 ease-in-out rounded-3xl 
-  backdrop-blur-[7px] z-20 hover:scale-105 animate-[float_4s_ease-in-out_infinite]">
+  backdrop-blur-[7px] z-20 hover:scale-105 animate-[float_4s_ease-in-out_infinite] ${className}`}>
 
   <div className="relative group">
     <House

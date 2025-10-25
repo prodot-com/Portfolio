@@ -55,7 +55,7 @@ export function EducationCard() {
                       href={edu.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-semibold text-[14px] md:text-[16px] text-neutral-800 dark:text-neutral-200"
+                      className="font-semibold heading-font text-[14px] md:text-[16px] text-neutral-800 dark:text-neutral-200"
                       >
                       {edu.name}
                     </a>

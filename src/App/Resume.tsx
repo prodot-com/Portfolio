@@ -25,19 +25,11 @@ const Resume = () => {
     return () => observer.disconnect();
   }, []);
 
-  const toggleDarkMode = () => {
-    setIsDarkMode((prevMode) => !prevMode);
-  };
 
   return (
     <div className="relative min-h-screen bg-neutral-50 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100">
-      {/* HEADER */}
-      <div className="flex justify-center items-center py-4 md:py-6 text-2xl font-semibold">
-        <p className="tracking-wide text-3xl heading-font font-bold">Resume</p>
-      </div>
-
       {/* MAIN CONTENT */}
-      <div className="flex justify-center items-start py-4 px-3 sm:px-6 lg:px-10">
+      <div className="flex justify-center items-start py-4 px-3 sm:px-6 lg:px-10 mt-12">
         <div className="w-full max-w-3xl bg-white dark:bg-neutral-800 border border-gray-300 dark:border-neutral-700 shadow-lg rounded-xl 
         p-6 sm:p-10 transition-all duration-300 print:shadow-none print:border-none print:rounded-none">
           {/* NAME & CONTACT */}
@@ -153,7 +145,7 @@ const Resume = () => {
 
       <div className="min-h-[100px]">
       </div>
-      <BottomNavbar/>
+      <BottomNavbar className="print:hidden"/>
     </div>
   );
 };

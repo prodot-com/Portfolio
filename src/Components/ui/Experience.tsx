@@ -54,7 +54,7 @@ export function Experience() {
                 />
                 <div>
                   <div className="inline-flex items-center gap-1">
-                    <p className="font-semibold text-[14px] md:text-[16px] text-neutral-800 dark:text-neutral-200">
+                    <p className="font-semibold heading-font text-[14px] md:text-[16px] text-neutral-800 dark:text-neutral-200">
                       {exp.company}
                     </p>
                     <ChevronRight
@@ -63,7 +63,7 @@ export function Experience() {
                       }`}
                     />
                   </div>
-                  <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                  <p className="inter-font text-sm text-neutral-500 dark:text-neutral-400">
                     {exp.sub}
                   </p>
                 </div>
@@ -71,9 +71,9 @@ export function Experience() {
 
               {/* Right: Start/End Date Stack */}
               <div className="flex flex-col sm:flex-row  items-end text-right text-neutral-600 dark:text-neutral-400 text-sm">
-                <p className="font-medium">{exp.startDate}</p>
+                <p className="font-medium inter-font">{exp.startDate}</p>
                 <p className="px-1 md:inline hidden">-</p>
-                <p className="font-medium">{exp.endDate || "Present"}</p>
+                <p className="font-medium inter-font">{exp.endDate || "Present"}</p>
               </div>
             </div>
 
@@ -85,7 +85,7 @@ export function Experience() {
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="text-sm md:text-base font-normal text-neutral-700 dark:text-neutral-300 leading-relaxed pl-[3.5rem] sm:pl-[4.5rem] md:pr-4"
+                  className="text-sm md:text-base inter-font font-normal text-neutral-700 dark:text-neutral-300 leading-relaxed pl-[3.5rem] sm:pl-[4.5rem] md:pr-4"
                 >
                   {exp.description}
                 </motion.p>
