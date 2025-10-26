@@ -1,8 +1,6 @@
-import { Button } from "@/Components/magicui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
   CardFooter,
@@ -10,7 +8,6 @@ import {
 import { BorderBeam } from "../magicui/border-beam";
 import ReactMarkdown from "react-markdown";
 import { Github, Globe } from "lucide-react";
-import { ShinyButton } from "../magicui/shiny-button";
 
 type Project = {
   name: string;
