@@ -10,11 +10,8 @@ import { EducationCard } from "@/Components/ui/Education";
 import { Contact } from "@/Components/ui/Contact";
 import { Experience } from "@/Components/ui/Experience";
 import { useNavigate } from "react-router-dom";
-import BottomNavbar from "@/Components/ui/BottomNavbar";
 import { ResumeLink } from "@/lib/Links";
-
-
-
+import BottomNavbar from "@/Components/ui/BottomDock";
 
 
 const Home = () => {
@@ -167,7 +164,7 @@ useEffect(() => {
             </div>
           </div>
 
-          <div className="heading-font w-full pr-17 max-w-5xl px-4 lg:ml-12 mt-10 z-20">
+          <div className="heading-font w-full pr-17 max-w-5xl px-4 lg:ml-12 mt-10 z-0">
             <div className="flex">
               <p className="selection:bg-neutral-700 font-bold text-2xl text-black dark:text-white">
                 About
@@ -229,7 +226,7 @@ useEffect(() => {
           <EducationCard/>
           </div>
 
-          <div className="selection:bg-neutral-700 heading-font sm:pr-17 px-4 lg:ml-14 mt-2 sm:mt-1 z-20 w-full max-w-5xl  border-neutral-500 dark:border-neutral-600 pt-4">
+          <div className=" selection:bg-neutral-700 heading-font sm:pr-17 px-4 lg:ml-14 mt-2 sm:mt-1 z-0 w-full max-w-5xl  border-neutral-500 dark:border-neutral-600 pt-4">
             <Contact/>
           </div>
 
