@@ -5,12 +5,12 @@ import { SpeedInsights } from '@vercel/speed-insights/react';
 const App = () => {
   return (
 <div className="min-h-screen w-full bg-white dark:bg-black relative">
-  <SpeedInsights/>
   <BrowserRouter>
   <Routes>
       <Route path="/" element={<Home/>}/>
   </Routes>
   </BrowserRouter>
+  <SpeedInsights/>
 </div>
   )
 }
