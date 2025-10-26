@@ -2,16 +2,8 @@ import { useEffect, useState } from "react";
 import GitHubCalendar from "react-github-calendar";
 import pro2 from "../../assets/pro2.jpg";
 import hero1 from "../../assets/hero1.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-  faLinkedinIn,
-  faXTwitter,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
-import { House, Paperclip, Copyright} from "lucide-react";
+import {Paperclip, Copyright} from "lucide-react";
 import {TechStackMarquee } from "@/Components/ui/TechStack";
-import { AnimatedThemeToggler } from "@/Components/magicui/animated-theme-toggler";
 import { ScrollProgress } from "@/Components/magicui/scroll-progress";
 import { Projectcard } from "@/Components/ui/ProjectCard";
 import { EducationCard } from "@/Components/ui/Education";
