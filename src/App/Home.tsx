@@ -19,6 +19,7 @@ import { Contact } from "@/Components/ui/Contact";
 import { Experience } from "@/Components/ui/Experience";
 import { useNavigate } from "react-router-dom";
 import BottomNavbar from "@/Components/ui/BottomNavbar";
+import { ResumeLink } from "@/lib/Links";
 
 
 
@@ -152,7 +153,11 @@ useEffect(() => {
               </h2>
 
               <div className="relative group">
-                <a href="">
+                <a 
+                href={ResumeLink}
+                target="_blank" 
+                rel="noopener noreferrer"
+                >
               <Paperclip
                 size={35}
                 className="px-1 py-1.5 cursor-pointer rounded-full dark:hover:bg-[#262626] dark:text-white hover:bg-neutral-300 transition-all duration-300 ease-in-out"

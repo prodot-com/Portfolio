@@ -9,7 +9,7 @@ import { House } from "lucide-react";
 import { useEffect, useState } from "react";
 import { AnimatedThemeToggler } from "../magicui/animated-theme-toggler";
 import { useNavigate } from "react-router-dom";
-import { GithUbLink, LinkedInLink, XLink } from "@/lib/SocialLinks";
+import { GithUbLink, LinkedInLink, XLink } from "@/lib/Links";
 
 
 const BottomNavbar = ({className = ""}) => {
