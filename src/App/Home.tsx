@@ -12,6 +12,7 @@ import { Experience } from "@/Components/ui/Experience";
 import { useNavigate } from "react-router-dom";
 import { ResumeLink } from "@/lib/Links";
 import BottomNavbar from "@/Components/ui/BottomDock";
+import TopArrow from "@/Components/ui/TopArrow";
 
 
 const Home = () => {
@@ -238,6 +239,7 @@ useEffect(() => {
           </div>
 
           <BottomNavbar/>
+          <TopArrow/>
         </div>
       </div>
 
