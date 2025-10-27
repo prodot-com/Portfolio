@@ -40,7 +40,7 @@ const TopArrow = () => {
             '
         onClick={()=>ScrollToTop()}
         >
-            <ChevronUp className="w-8 h-8"/>
+            <ChevronUp className="w-8 h-8 sm:w-9 sm:h-9"/>
         </div>)
 }
         </div>
