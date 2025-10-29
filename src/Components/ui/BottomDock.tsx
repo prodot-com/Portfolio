@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 import { GithUbLink, LinkedInLink, XLink } from "@/lib/Links";
 
 
-const BottomNavbar = ({className = ""}) => {
+const BottomDock = ({className = ""}) => {
     const [isDarkMode, setIsDarkMode] = useState(false);
     const navigate = useNavigate()
     
@@ -32,7 +32,7 @@ const BottomNavbar = ({className = ""}) => {
       };
   return (
     <div className={`fixed flex justify-center md:w-auto md:min-w-[310px] left-1/2 -translate-x-1/2 bg-white/10 dark:bg-neutral-700/50 shadow-xl 
-  border border-gray-400 bottom-0 mb-4 md:mb-8 items-center gap-2 p-2 px-4 cursor-pointer transition-all duration-300 ease-in-out rounded-2xl 
+  border border-gray-400 bottom-0 mb-7 md:mb-8 items-center gap-2 p-2 px-4 cursor-pointer transition-all duration-300 ease-in-out rounded-2xl 
   backdrop-blur-[7px] z-20 hover:scale-105 animate-[float_4s_ease-in-out_infinite] ${className}`}>
 
   <div className="relative group">
@@ -113,4 +113,4 @@ const BottomNavbar = ({className = ""}) => {
   )
 }
 
-export default BottomNavbar
+export default BottomDock

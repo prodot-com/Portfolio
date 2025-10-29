@@ -11,7 +11,7 @@ import { Contact } from "@/Components/ui/Contact";
 import { Experience } from "@/Components/ui/Experience";
 import { useNavigate } from "react-router-dom";
 import { ResumeLink } from "@/lib/Links";
-import BottomNavbar from "@/Components/ui/BottomDock";
+import BottomDock from "@/Components/ui/BottomDock";
 import TopArrow from "@/Components/ui/TopArrow";
 
 
@@ -28,6 +28,13 @@ useEffect(() => {
   observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
   return () => observer.disconnect();
 }, []);
+
+const handleScroll = ()=> {
+  window.scrollTo({
+    top: 2000,
+    behavior: "smooth"
+  })
+}
 
   return (
     // <div className="grid grid-cols-1 lg:grid-cols-4 bg-white dark:bg-neutral-900">
@@ -181,14 +188,15 @@ useEffect(() => {
     <span>Resume/ CV</span>
   </a>
 
-  <div
+  <button
     className="flex items-center gap-2 px-3 py-2 rounded-[4px] border border-green-500
               text-green-400 text-sm md:text-[15px]
               transition-all duration-300"
+    onClick={()=>handleScroll()}
   >
-    <div className="bg-green-500 w-2.5 h-2.5 rounded-full animate-pulse"></div>
-    <p className="text-black dark:text-white/90">Open to work</p>
-  </div>
+    <div className="bg-green-500 w-2.5 h-2.5 rounded-full animate-pulse "></div>
+    <p className="text-black dark:text-white/90 cursor-pointer">Open to work</p>
+  </button>
 </div>
 
 
@@ -248,7 +256,7 @@ useEffect(() => {
             </p>
           </div>
 
-          <BottomNavbar/>
+          <BottomDock/>
           <TopArrow/>
         </div>
       </div>
