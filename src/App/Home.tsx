@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import GitHubCalendar from "react-github-calendar";
 import pro2 from "../../assets/pro2.jpg";
 import hero1 from "../../assets/hero1.jpg";
-import {Paperclip, Copyright} from "lucide-react";
+import {Paperclip, Copyright, NotebookText} from "lucide-react";
 import {TechStackMarquee } from "@/Components/ui/TechStack";
 import { ScrollProgress } from "@/Components/magicui/scroll-progress";
 import { Projectcard } from "@/Components/ui/ProjectCard";
@@ -142,21 +142,21 @@ useEffect(() => {
                 Probal Ghosh
               </h2>
 
-              <div className="relative group">
+              {/* <div className="relative group border">
                 <a 
                 href={ResumeLink}
                 target="_blank" 
                 rel="noopener noreferrer"
                 >
-              <Paperclip
-                size={35}
-                className="px-1 py-1.5 cursor-pointer rounded-full dark:hover:bg-[#262626] dark:text-white hover:bg-neutral-300 transition-all duration-300 ease-in-out"
-              />
+                  <button className="flex gap-1">
+                    <NotebookText className="rotate-10"/>
+                    <p>Resume</p>
+                  </button>
               </a>
               <span className="absolute bottom-13 left-1/2 -translate-x-1/2 opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 bg-black text-white text-xs px-2 py-1 rounded-md whitespace-nowrap">
                 Resume
               </span>
-            </div>
+            </div> */}
             </div>
               
               <p className="heading-font dark:text-neutral-500 text-neutral-600 text-sm md:text-[16px] mt-1">
@@ -165,7 +165,7 @@ useEffect(() => {
             </div>
           </div>
 
-          <div className="heading-font w-full pr-17 max-w-5xl px-4 lg:ml-12 mt-10 z-0">
+          <div className="heading-font w-full pr-17 max-w-5xl px-4 lg:ml-12 mt-9 z-0">
             <div className="flex">
               <p className="selection:bg-neutral-700 font-bold text-2xl text-black dark:text-white">
                 About
@@ -181,6 +181,34 @@ useEffect(() => {
               , freelance, or collaborate.
             </p>
           </div>
+
+          <div
+  className="heading-font w-full max-w-5xl px-4 lg:ml-12 mt-9 z-0 flex gap-6"
+>
+  {/* Resume / CV Button */}
+  <a
+    href={ResumeLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 px-4 py-2 rounded-[6px] border border-neutral-600
+              text-sm md:text-[15px] text-neutral-200 hover:text-white
+              hover:border-neutral-400 bg-neutral-900 hover:bg-neutral-800
+              transition-all duration-300 shadow-[0_0_10px_rgba(255,255,255,0.05)]"
+  >
+    <NotebookText size={18} className="text-neutral-300" />
+    <span>Resume/ CV</span>
+  </a>
+
+  <div
+    className="flex items-center gap-2 px-3 py-2 rounded-xl border border-green-700
+              text-green-400 text-sm md:text-[15px]
+              transition-all duration-300"
+  >
+    <div className="bg-green-500 w-2.5 h-2.5 rounded-full animate-pulse"></div>
+    <p>Open to work</p>
+  </div>
+</div>
+
 
           <TechStackMarquee/>
 

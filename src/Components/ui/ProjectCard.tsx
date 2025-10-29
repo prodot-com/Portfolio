@@ -28,8 +28,8 @@ const projects: Project[] = [
     tools: ["React", "Node.js", "MongoDB", "Socket.IO", "Tailwind CSS"],
     image: "/cricScoreboard.png",
     link: {
-      gitlink: "https://www.prasen.dev/",
-      livelink: "live",
+      gitlink: "https://github.com/prodot-com/Cric-Scoreboard",
+      livelink: "https://cric-scoreboard.vercel.app/",
     },
   },
   {
@@ -39,8 +39,8 @@ const projects: Project[] = [
     tools: ["React", "Node.js", "MongoDB", "Git", "Tailwind CSS"],
     image: "/syncSpace.png",
     link: {
-      gitlink: "https://www.prasen.dev/",
-      livelink: "live",
+      gitlink: "https://github.com/prodot-com/SyncSpace",
+      livelink: "https://sync-space-dun.vercel.app/",
     },
   },
   
