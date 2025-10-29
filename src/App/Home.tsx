@@ -185,14 +185,12 @@ useEffect(() => {
           <div
   className="heading-font w-full max-w-5xl px-4 lg:ml-12 mt-9 z-0 flex gap-6"
 >
-  {/* Resume / CV Button */}
   <a
     href={ResumeLink}
     target="_blank"
     rel="noopener noreferrer"
-    className="flex items-center gap-2 px-4 py-2 rounded-[6px] border border-neutral-600
-              text-sm md:text-[15px] text-neutral-200 hover:text-white
-              hover:border-neutral-400 bg-neutral-900 hover:bg-neutral-800
+    className="flex items-center gap-2 px-4 py-2 rounded-[4px]
+              text-sm md:text-[15px] text-neutral-200 bg-neutral-900 hover:bg-neutral-800
               transition-all duration-300 shadow-[0_0_10px_rgba(255,255,255,0.05)]"
   >
     <NotebookText size={18} className="text-neutral-300" />
@@ -200,12 +198,12 @@ useEffect(() => {
   </a>
 
   <div
-    className="flex items-center gap-2 px-3 py-2 rounded-xl border border-green-700
+    className="flex items-center gap-2 px-3 py-2 rounded-[4px] border-2 border-green-500
               text-green-400 text-sm md:text-[15px]
               transition-all duration-300"
   >
     <div className="bg-green-500 w-2.5 h-2.5 rounded-full animate-pulse"></div>
-    <p>Open to work</p>
+    <p className="text-black">Open to work</p>
   </div>
 </div>
 

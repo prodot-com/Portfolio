@@ -53,7 +53,7 @@ export function TechStackMarquee() {
   return (
     <div className="selection:bg-neutral-700 relative mt-10 px-4 md:px-10 flex flex-col gap-3 w-full max-w-5xl overflow-hidden">
       <div>
-        <p className="heading-font font-bold">Technologies I use</p>
+        <p className="heading-font md:text-[19px] font-bold">Technologies I use</p>
       </div>
       <Marquee pauseOnHover className="[--duration:60s] [--gap:1rem]">
         {TachStack.map((tech) => (
