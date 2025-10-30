@@ -62,7 +62,7 @@ export function EducationCard() {
                     <ChevronRight className="w-4 text-neutral-800 dark:text-neutral-200 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-transform duration-200" />
                   </div>
 
-                  <p className="text-sm inter-font text-neutral-500 dark:text-neutral-400">
+                  <p className="text-sm hanken-grotesk-font text-neutral-500 dark:text-neutral-400">
                     {edu.subname}
                   </p>
                 </div>

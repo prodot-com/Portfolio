@@ -66,7 +66,7 @@ export function Projectcard() {
 
           {/* Header */}
           <CardHeader className="px-3 md:pt-1">
-            <CardTitle className="text-lg font-semibold heading-font">
+            <CardTitle className="text-lg font-semibold hanken-grotesk-font">
               {project.name}
             </CardTitle>
 

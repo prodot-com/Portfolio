@@ -62,7 +62,7 @@ export function Experience() {
                       }`}
                     />
                   </div>
-                  <p className="inter-font text-sm text-neutral-500 dark:text-neutral-400">
+                  <p className="hanken-grotesk-font text-sm text-neutral-500 dark:text-neutral-400">
                     {exp.sub}
                   </p>
                 </div>
@@ -84,7 +84,7 @@ export function Experience() {
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="text-sm md:text-base inter-font font-normal text-neutral-700 dark:text-neutral-300 leading-relaxed pl-[3.5rem] sm:pl-[4.5rem] md:pr-4"
+                  className="text-sm md:text-base hanken-grotesk-font font-normal text-neutral-700 dark:text-neutral-300 leading-relaxed pl-[3.5rem] sm:pl-[4.5rem] md:pr-4"
                 >
                   {exp.description}
                 </motion.p>

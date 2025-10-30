@@ -37,68 +37,23 @@ const handleScroll = ()=> {
 }
 
   return (
-    // <div className="grid grid-cols-1 lg:grid-cols-4 bg-white dark:bg-neutral-900">
     <div className="grid grid-cols-1 lg:grid-cols-4 items-stretch bg-white dark:bg-neutral-900 min-h-screen ">
       <div className="hidden lg:block">
-        <div className="h-full w-full relative">
+<div className="h-full w-full bg-white dark:bg-neutral-950 relative">
   <div
-    className="absolute inset-0 z-0 transition-colors duration-300"
+    className="absolute inset-0 z-0 block dark:hidden"
     style={{
-      backgroundImage: `
-        linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
-        linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px)
-      `,
-      backgroundSize: "20px 20px",
-      backgroundPosition: "0 0, 0 0",
-      maskImage: `
-        repeating-linear-gradient(
-          to right,
-          black 0px,
-          black 3px,
-          transparent 3px,
-          transparent 8px
-        ),
-        repeating-linear-gradient(
-          to bottom,
-          black 0px,
-          black 3px,
-          transparent 3px,
-          transparent 8px
-        )
-      `,
-      WebkitMaskImage: `
-        repeating-linear-gradient(
-          to right,
-          black 0px,
-          black 3px,
-          transparent 3px,
-          transparent 8px
-        ),
-        repeating-linear-gradient(
-          to bottom,
-          black 0px,
-          black 3px,
-          transparent 3px,
-          transparent 8px
-        )
-      `,
-      maskComposite: "intersect",
-      WebkitMaskComposite: "source-in",
+      backgroundImage: "repeating-linear-gradient(45deg, transparent, transparent 2px, #f3f4f8 2px, #f3f4f6 4px)",
     }}
   />
- 
-  <style>
-    {`
-      :root {
-        --grid-color: #c9c8c7;
-      }
-      .dark {
-        --grid-color: #2d2d2d;
-      }
-    `}
-  </style>
-
-  {/* Your Content/Components */}
+  
+  <div
+    className="absolute inset-0 z-0 hidden dark:block"
+    style={{
+      backgroundImage: "repeating-linear-gradient(45deg, transparent, transparent 2px, #171717 2px, #18181b 4px)",
+    }}
+  />
+  
 </div>
 
       </div>
@@ -250,7 +205,7 @@ const handleScroll = ()=> {
           </div>
 
           <div className="selection:bg-neutral-700 mt-7 pt-5 pl-4 md:px-9 border-t-1 dark:border-neutral-700 flex flex-col gap-3 w-full max-w-5xl min-h-[170px]">
-            <p className="pl-2 flex items-center gap-1 inter-font">
+            <p className="pl-2 flex items-center gap-1 hanken-grotesk-font">
               <Copyright className="w-4 sm:w-5"/> 
               <span className="text-[15px] sm:text-[17px]">2025 Probal Ghosh. All rights reserved.</span>
             </p>
@@ -260,67 +215,22 @@ const handleScroll = ()=> {
           <TopArrow/>
         </div>
       </div>
-
-
       <div className="hidden lg:block">
-        <div className="h-full w-full relative">
+        <div className="h-full w-full bg-white dark:bg-neutral-950 relative">
   <div
-    className="absolute inset-0 z-0 transition-colors duration-300"
+    className="absolute inset-0 z-0 block dark:hidden"
     style={{
-      backgroundImage: `
-        linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
-        linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px)
-      `,
-      backgroundSize: "20px 20px",
-      backgroundPosition: "0 0, 0 0",
-      maskImage: `
-        repeating-linear-gradient(
-          to right,
-          black 0px,
-          black 3px,
-          transparent 3px,
-          transparent 8px
-        ),
-        repeating-linear-gradient(
-          to bottom,
-          black 0px,
-          black 3px,
-          transparent 3px,
-          transparent 8px
-        )
-      `,
-      WebkitMaskImage: `
-        repeating-linear-gradient(
-          to right,
-          black 0px,
-          black 3px,
-          transparent 3px,
-          transparent 8px
-        ),
-        repeating-linear-gradient(
-          to bottom,
-          black 0px,
-          black 3px,
-          transparent 3px,
-          transparent 8px
-        )
-      `,
-      maskComposite: "intersect",
-      WebkitMaskComposite: "source-in",
+      backgroundImage: "repeating-linear-gradient(45deg, transparent, transparent 2px, #f3f4f8 2px, #f3f4f6 4px)",
     }}
   />
- 
-  <style>
-    {`
-      :root {
-        --grid-color: #c9c8c7;
-      }
-      .dark {
-        --grid-color: #2d2d2d;
-      }
-    `}
-  </style>
-
+  
+  <div
+    className="absolute inset-0 z-0 hidden dark:block"
+    style={{
+      backgroundImage: "repeating-linear-gradient(45deg, transparent, transparent 2px, #171717 2px, #18181b 4px)",
+    }}
+  />
+  
 </div>
 
       </div>
