@@ -2,11 +2,12 @@ import { useEffect, useState } from "react";
 import GitHubCalendar from "react-github-calendar";
 import pro2 from "../../assets/pro2.jpg";
 import hero1 from "../../assets/hero1.jpg";
-import {Copyright, NotebookText} from "lucide-react";
+import {Copyright} from "lucide-react";
 import {TechStackMarquee } from "@/Components/ui/TechStack";
 import { ScrollProgress } from "@/Components/magicui/scroll-progress";
 import { Projectcard } from "@/Components/ui/ProjectCard";
 import { EducationCard } from "@/Components/ui/Education";
+import { ShinyButton } from "@/Components/magicui/shiny-button";
 import { Contact } from "@/Components/ui/Contact";
 import { Experience } from "@/Components/ui/Experience";
 import { useNavigate } from "react-router-dom";
@@ -134,13 +135,10 @@ const handleScroll = ()=> {
   <a
     href={ResumeLink}
     target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 px-4 py-2 rounded-[4px]
-              text-sm md:text-[15px] text-neutral-200 bg-neutral-900 dark:border border-neutral-500
-              transition-all duration-300 shadow-lg shadow-neutral-400 dark:shadow-neutral-800 hover:scale-95"
-  >
-    <NotebookText size={18} className="text-neutral-300 rotate-10" />
-    <span>Resume/ CV</span>
+    rel="noopener noreferrer">
+    <ShinyButton>
+      Resume/ CV
+      </ShinyButton>
   </a>
 
   <button
