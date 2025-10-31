@@ -31,7 +31,7 @@ const BottomDock = ({className = ""}) => {
         setIsDarkMode((prevMode) => !prevMode);
       };
   return (
-    <div className={`fixed flex justify-center md:w-auto md:min-w-[310px] left-1/2 -translate-x-1/2 bg-white/10 dark:bg-neutral-700/50 shadow-xl 
+    <div className={`fixed flex justify-center md:w-auto md:min-w-[310px] left-1/2 -translate-x-1/2 bg-white/10 dark:bg-neutral-900/25 shadow-xl 
   border border-gray-400 bottom-0 mb-7 md:mb-8 items-center gap-2 p-2 px-4 cursor-pointer transition-all duration-300 ease-in-out rounded-2xl 
   backdrop-blur-[7px] z-20 hover:scale-105 animate-[float_4s_ease-in-out_infinite] ${className}`}>
 
@@ -39,7 +39,7 @@ const BottomDock = ({className = ""}) => {
     <House
       size={35}
       onClick={()=>navigate('/')}
-      className="px-1 py-1.5 hover:mr-2 rounded-full dark:hover:bg-[#262626] dark:text-white hover:bg-neutral-300 hover:shadow-[0_0_10px_rgba(255,255,255,0.3)] transition-all duration-300 ease-in-out"
+      className="px-1 py-1.5 hover:mr-2 rounded-full dark:hover:bg-neutral-700/25 dark:text-white hover:bg-neutral-300 transition-all duration-300 ease-in-out"
     />
     <span className="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 bg-black text-white text-xs px-2 py-1 rounded-md whitespace-nowrap">
       Home
@@ -51,7 +51,7 @@ const BottomDock = ({className = ""}) => {
       <FontAwesomeIcon
         icon={faEnvelope}
         aria-label="Mail"
-        className="px-1 py-1.5 hover:mx-2 rounded-full dark:hover:bg-[#262626] dark:text-white hover:bg-neutral-300 hover:shadow-[0_0_10px_rgba(255,255,255,0.3)] transition-all duration-300 ease-in-out"
+        className="px-1 py-1.5 hover:mx-2 rounded-full dark:hover:bg-neutral-700/25 dark:text-white hover:bg-neutral-300  transition-all duration-300 ease-in-out"
         size="xl"
       />
       <span className="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 bg-black text-white text-xs px-2 py-1 rounded-md whitespace-nowrap">
@@ -63,7 +63,7 @@ const BottomDock = ({className = ""}) => {
       <a href={XLink} target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon
           icon={faXTwitter}
-          className="px-1 py-1.5 hover:mx-2 rounded-full dark:hover:bg-[#262626] dark:text-white hover:bg-neutral-300 hover:shadow-[0_0_10px_rgba(255,255,255,0.3)] transition-all duration-300 ease-in-out"
+          className="px-1 py-1.5 hover:mx-2 rounded-full dark:hover:bg-neutral-700/25 dark:text-white hover:bg-neutral-300 transition-all duration-300 ease-in-out"
           size="xl"
         />
       </a>
@@ -77,7 +77,7 @@ const BottomDock = ({className = ""}) => {
         <a href={LinkedInLink} target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon
         icon={faLinkedinIn}
-        className="px-1 py-1.5 hover:mx-2 rounded-full dark:hover:bg-[#262626] dark:text-white hover:bg-neutral-300 hover:shadow-[0_0_10px_rgba(255,255,255,0.3)] transition-all duration-300 ease-in-out"
+        className="px-1 py-1.5 hover:mx-2 rounded-full dark:hover:bg-neutral-700/25 dark:text-white hover:bg-neutral-300 transition-all duration-300 ease-in-out"
         size="xl"
       />
       </a>
@@ -91,7 +91,7 @@ const BottomDock = ({className = ""}) => {
         <a href={GithUbLink} target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon
         icon={faGithub}
-        className="px-1 py-1.5 hover:mx-2 rounded-full dark:hover:bg-[#262626] dark:text-white hover:bg-neutral-300 hover:shadow-[0_0_10px_rgba(255,255,255,0.3)] transition-all duration-300 ease-in-out"
+        className="px-1 py-1.5 hover:mx-2 rounded-full dark:hover:bg-neutral-700/25 dark:text-white hover:bg-neutral-300 transition-all duration-300 ease-in-out"
         size="xl"
       />
       </a>
@@ -103,7 +103,7 @@ const BottomDock = ({className = ""}) => {
 
   <div className="relative group" onClick={toggleDarkMode}>
     <AnimatedThemeToggler 
-    className="px-1.5 py-1.5 hover:ml-2 rounded-full dark:hover:bg-[#262626] dark:text-white hover:bg-neutral-300 hover:shadow-[0_0_10px_rgba(255,255,255,0.3)] transition-all duration-300 ease-in-out cursor-pointer"/>
+    className="px-1.5 py-1.5 hover:ml-2 rounded-full dark:hover:bg-neutral-700/25 dark:text-white hover:bg-neutral-300 transition-all duration-300 ease-in-out cursor-pointer"/>
     <span className="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 bg-black text-white text-xs px-2 py-1 rounded-md whitespace-nowrap">
       {isDarkMode ? "Light" : "Dark"}
     </span>
