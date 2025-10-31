@@ -135,20 +135,24 @@ const handleScroll = ()=> {
   <a
     href={ResumeLink}
     target="_blank"
-    rel="noopener noreferrer">
+    rel="noopener noreferrer"
+  >
     <ShinyButton>
       Resume/ CV
-      </ShinyButton>
+    </ShinyButton>
   </a>
 
   <button
     className="flex items-center gap-2 px-3 py-2 rounded-[4px] border border-green-500
-              text-green-400 text-sm md:text-[15px]
-              transition-all duration-300"
-    onClick={()=>handleScroll()}
+              text-sm md:text-[15px] transition-all duration-300
+              
+              text-green-700 
+              
+              dark:text-green-400"
+    onClick={() => handleScroll()}
   >
     <div className="bg-green-500 w-2.5 h-2.5 rounded-full animate-pulse "></div>
-    <p className="text-black dark:text-white/90 cursor-pointer">Open to work</p>
+    <p>Open to work</p>
   </button>
 </div>
 
