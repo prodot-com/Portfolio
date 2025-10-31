@@ -103,6 +103,21 @@
   animation: border-rotate 3s linear infinite;
 }
 
+@layer utilities {
+  @keyframes spin-custom {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-custom {
+    animation: spin-custom 2s linear 3s;
+  }
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

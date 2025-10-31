@@ -1,12 +1,20 @@
 import { RainbowButton } from "../magicui/rainbow-button";
 import { Mail } from "lucide-react";
+import { toast } from "sonner";
 
 export function RainbowButtonCustom() {
   const email = "xprobal52@gmail.com";
 
+  const handleClick = ()=>{
+    toast.loading("Redirecting");
+    setTimeout(() => {
+      window.location.href = `mailto:${email}`
+    }, 3000);
+  }
+
   return (
     <RainbowButton
-      onClick={() => (window.location.href = `mailto:${email}`)}
+      onClick={() => handleClick()}
       className="flex items-center gap-2"
     >
       <Mail className="w-4 h-4" />
