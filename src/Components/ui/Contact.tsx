@@ -1,6 +1,7 @@
-import { Copy, Check } from "lucide-react";
+import { Copy} from "lucide-react";
 import { useState } from "react";
 import { RainbowButtonCustom } from "./RainbowButton";
+import { toast } from "sonner";
 
 export function Contact() {
   const email = "xprobal52@gmail.com";
@@ -9,6 +10,7 @@ export function Contact() {
   const handleCopy = () => {
     navigator.clipboard.writeText(email);
     setCopied(true);
+    toast("Email Copied")
     setTimeout(() => {
       setCopied(false);
     }, 2000);
@@ -30,11 +32,12 @@ export function Contact() {
           onClick={handleCopy}
           className="group cursor-pointer flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold rounded-md border border-neutral-300 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-colors"
         >
-          {copied ? (
+          <Copy className="w-4 h-4" />
+          {/* {copied ? (
             <Check className="w-4 h-4 text-green-500" />
           ) : (
             <Copy className="w-4 h-4" />
-          )}
+          )} */}
           <span className="">{email}</span>
         </button>
       </div>

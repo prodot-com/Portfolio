@@ -1,6 +1,7 @@
 import Home from "./App/Home"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Toaster } from "./Components/magicui/sonner";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Route path="/" element={<Home/>}/>
   </Routes>
   <SpeedInsights/>
+  <Toaster/>
   </BrowserRouter>
   
 </div>

@@ -32,7 +32,7 @@ const BottomDock = ({className = ""}) => {
       };
   return (
     <div className={`fixed flex justify-center md:w-auto md:min-w-[310px] left-1/2 -translate-x-1/2 bg-white/10 dark:bg-neutral-900/25 shadow-xl 
-  border border-gray-400 bottom-0 mb-7 md:mb-8 items-center gap-2 p-2 px-4 cursor-pointer transition-all duration-300 ease-in-out rounded-2xl 
+  border border-gray-400 bottom-0 mb-7 md:mb-8 items-center gap-2 p-2 px-4 cursor-pointer transition-all duration-300 ease-in-out rounded-[7px] 
   backdrop-blur-[7px] z-20 hover:scale-105 animate-[float_4s_ease-in-out_infinite] ${className}`}>
 
   <div className="relative group">

@@ -63,7 +63,7 @@ const handleScroll = ()=> {
       <div className="col-span-1 lg:col-span-2">
         <div className="flex flex-col items-center min-h-screen relative overflow-hidden">
           <div className="fixed top-0 left-0 w-full h-[70px] bg-white dark:bg-black shadow z-30 flex items-center justify-center">
-            <div className="w-full max-w-3xl h-full px-4">
+            <div className="w-full max-w-3xl h-full px-2">
               <div className="h-full w-full flex justify-between items-center">
                 <h1
                 onClick={()=>navigate(0)}
@@ -160,14 +160,14 @@ const handleScroll = ()=> {
               <p className="font-bold text-black  dark:text-white text-[15px] md:text-xl heading-font selection:bg-neutral-600">
                 GitHub Contributions •{" "}
                 <span className="underline md:decoration-white md:dark:decoration-neutral-950 md:hover:decoration-green-500 decoration-green-500 cursor-pointer">
-                  <a href="https://github.com/prodot-com"
+                  <a href="https://github.com/prodot-com/"
                   target="blank">@prodot-com</a>
                 </span>
               </p>
             </div>
 
-            <div className="rounded-2xl p-[1.4px] animate-rotate-border bg-conic/[from_var(--border-angle)] dark:from-bg-neutral-900 via-green-500 dark:bg-neutral-900 from-80% via-90% to-100%">
-              <div className="relative px-1 py-3 rounded-2xl bg-white dark:bg-neutral-900 overflow-x-auto scrollbar-hide md:mx-0">
+            <div className="rounded-[4px] p-[1.4px] animate-rotate-border bg-conic/[from_var(--border-angle)] dark:from-bg-neutral-900 via-green-500 dark:bg-neutral-900 from-80% via-90% to-100%">
+              <div className="relative px-1 py-3 rounded-[4px] bg-white dark:bg-neutral-900 overflow-x-auto scrollbar-hide md:mx-0">
                 <GitHubCalendar
                   username="prodot-com"
                   blockSize={8.2}

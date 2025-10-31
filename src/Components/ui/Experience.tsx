@@ -18,6 +18,7 @@ const experiences: ExperienceItem[] = [
     company: "Zaalima Development",
     sub: "Software Engineer",
     startDate: "August 2025",
+    endDate: "October 2025",
     description:
       "Built and optimized full-stack web applications using the MERN stack. Implemented secure authentication, real-time features, and responsive UIs with smooth frontend–backend integration for high-performance user experiences.",
   },
