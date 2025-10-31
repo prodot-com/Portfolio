@@ -6,7 +6,7 @@ export function RainbowButtonCustom() {
   const email = "xprobal52@gmail.com";
 
   const handleClick = ()=>{
-    toast.loading("Redirecting");
+    toast.error("Redirecting");
     setTimeout(() => {
       window.location.href = `mailto:${email}`
     }, 3000);
