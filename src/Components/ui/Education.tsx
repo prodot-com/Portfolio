@@ -30,7 +30,7 @@ const educations: EducationItem[] = [
 
 export function EducationCard() {
   return (
-    <section className="px-3 md:px-8 md:pl-0 md:pt-3 md:pb-4">
+    <section className="px-2 md:px-8 md:pl-0 md:pt-3 md:pb-4">
       <p className="text-[15px] md:text-xl font-bold heading-font mb-6 text-neutral-900 dark:text-white">
         Education
       </p>

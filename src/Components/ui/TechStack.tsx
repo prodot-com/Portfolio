@@ -30,7 +30,7 @@ const TechIcon = ({
   return (
     <figure
       className={cn(
-        "relative h-full w-35 md:w-40 cursor-pointer overflow-hidden rounded-xl py-3 md:p-4",
+        "relative h-full w-35 md:w-40 cursor-pointer overflow-hidden rounded-[7px] py-3 md:p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-200 hover:bg-gray-950/[.05]",
         // dark styles

@@ -5,7 +5,7 @@ import { Toaster } from "./Components/magicui/sonner";
 
 const App = () => {
   return (
-<div className="min-h-screen w-full bg-white dark:bg-black relative">
+<div className="min-h-screen w-full bg-white dark:bg-black relative scroll-smooth">
   <BrowserRouter>
   <Routes>
       <Route path="/" element={<Home/>}/>

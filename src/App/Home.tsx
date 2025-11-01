@@ -12,6 +12,7 @@ import { Experience } from "@/Components/ui/Experience";
 import { useNavigate } from "react-router-dom";
 import BottomDock from "@/Components/ui/BottomDock";
 import TopArrow from "@/Components/ui/TopArrow";
+import GithubCard from "@/Components/ui/GithubCard";
 
 
 const Home = () => {
@@ -79,7 +80,7 @@ useEffect(() => {
             <div className="absolute bottom-0 top-0 left-0 w-[70px] bg-gradient-to-r from-white dark:from-neutral-900 to-transparent"></div>
             <div className="absolute bottom-0 top-0 right-0 w-[70px] bg-gradient-to-l from-white dark:from-neutral-900 to-transparent"></div>
 
-            <div className="absolute inset-0 flex items-center font-bold justify-center text-white dark:text-black selection:bg-neutral-400 italic text-xl md:text-2xl heading-font">
+            <div className="absolute underline decoration-indigo-500 inset-0 flex items-center font-bold justify-center text-white dark:text-black selection:bg-neutral-400 italic text-xl md:text-2xl heading-font">
               Build anything.
             </div>
           </div>
@@ -122,7 +123,7 @@ useEffect(() => {
 
           <TechStackMarquee/>
 
-          <div className="selection:bg-neutral-700 mt-10 px-4 md:px-9 flex flex-col gap-3 w-full max-w-5xl">
+          {/* <div className="selection:bg-neutral-700 mt-10 px-4 md:px-9 flex flex-col gap-3 w-full max-w-5xl">
             <div className="md:px-0">
               <p className="font-bold text-black  dark:text-white text-[15px] md:text-xl heading-font selection:bg-neutral-600">
                 GitHub Contributions •{" "}
@@ -150,10 +151,11 @@ useEffect(() => {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
+          <GithubCard/>
 
           <div className="selection:bg-neutral-700 px-0 md:px-2 mt-9 font-bold w-full max-w-5xl">
-            <p className="pl-8 heading-font text-[15px] md:text-xl">Featured Projects</p>
+            <p className="pl-4 md:pl-8 heading-font text-[15px] md:text-xl">Featured Projects</p>
                   <Projectcard />
           </div>
 
