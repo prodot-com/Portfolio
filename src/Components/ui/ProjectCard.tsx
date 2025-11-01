@@ -81,7 +81,7 @@ export function Projectcard() {
               {project.tools.map((tool) => (
                 <span
                   key={tool}
-                  className="text-xs font-normal bg-neutral-200 dark:bg-neutral-800 text-gray-800 dark:text-white px-2 py-1 rounded-md border"
+                  className="text-xs font-normal bg-neutral-200 dark:bg-neutral-800 text-gray-800 dark:text-white px-2 py-1 rounded-[4px] border"
                 >
                   {tool}
                 </span>
@@ -97,7 +97,7 @@ export function Projectcard() {
                     href={project.link.livelink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-xs bg-black dark:bg-white text-white dark:text-black px-2 py-1 rounded-md border hover:bg-neutral-700 dark:hover:bg-neutral-400 transition"
+                    className="flex items-center gap-1 text-xs bg-black dark:bg-white text-white dark:text-black px-2 py-1 rounded-[4px] border hover:bg-neutral-700 dark:hover:bg-neutral-400 transition"
                   >
                     <Globe className="w-4 h-4" /> Live
                   </a>
@@ -108,7 +108,7 @@ export function Projectcard() {
                     href={project.link.gitlink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-xs bg-black dark:bg-white text-white dark:text-black px-2 py-1 rounded-md border hover:bg-neutral-700 dark:hover:bg-neutral-400 transition"
+                    className="flex items-center gap-1 text-xs bg-black dark:bg-white text-white dark:text-black px-2 py-1 rounded-[4px] border hover:bg-neutral-700 dark:hover:bg-neutral-400 transition"
                   >
                     <Github className="w-4 h-4" /> Source
                   </a>
@@ -133,8 +133,6 @@ export function Projectcard() {
           />
         </Card>
       ))}
-      {/* <ShinyButton className="">
-        All Projects</ShinyButton> */}
     </div>
   );
 }

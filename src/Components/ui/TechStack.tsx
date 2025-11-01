@@ -55,7 +55,7 @@ export function TechStackMarquee() {
       <div>
         <p className="heading-font font-bold">Technologies I use</p>
       </div>
-      <Marquee pauseOnHover className="[--duration:60s] [--gap:1rem]">
+      <Marquee pauseOnHover className="[--duration:60s] [--gap:1rem] ">
         {TachStack.map((tech) => (
           <TechIcon key={tech.name} {...tech} />
         ))}
