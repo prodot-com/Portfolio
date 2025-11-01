@@ -14,6 +14,7 @@ import { useNavigate } from "react-router-dom";
 import { ResumeLink } from "@/lib/Links";
 import BottomDock from "@/Components/ui/BottomDock";
 import TopArrow from "@/Components/ui/TopArrow";
+import { InteractiveHoverButton } from "@/Components/magicui/interactive-hover-button";
 
 
 const Home = () => {
@@ -137,9 +138,9 @@ const handleScroll = ()=> {
     target="_blank"
     rel="noopener noreferrer"
   >
-    <ShinyButton>
-      Resume/ CV
-    </ShinyButton>
+    <InteractiveHoverButton>
+      Resume
+    </InteractiveHoverButton>
   </a>
 
   <button
