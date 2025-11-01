@@ -10,10 +10,10 @@ import { EducationCard } from "@/Components/ui/Education";
 import { Contact } from "@/Components/ui/Contact";
 import { Experience } from "@/Components/ui/Experience";
 import { useNavigate } from "react-router-dom";
-import { ResumeLink } from "@/lib/Links";
+// import { ResumeLink } from "@/lib/Links";
 import BottomDock from "@/Components/ui/BottomDock";
 import TopArrow from "@/Components/ui/TopArrow";
-import { InteractiveHoverButton } from "@/Components/magicui/interactive-hover-button";
+// import { InteractiveHoverButton } from "@/Components/magicui/interactive-hover-button";
 
 
 const Home = () => {
@@ -30,12 +30,12 @@ useEffect(() => {
   return () => observer.disconnect();
 }, []);
 
-const handleScroll = ()=> {
-  window.scrollTo({
-    top: 2000,
-    behavior: "smooth"
-  })
-}
+// const handleScroll = ()=> {
+//   window.scrollTo({
+//     top: 2000,
+//     behavior: "smooth"
+//   })
+// }
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-4 items-stretch bg-white dark:bg-neutral-900 min-h-screen ">
@@ -129,7 +129,7 @@ const handleScroll = ()=> {
             </p>
           </div>
 
-          <div
+          {/* <div
   className="heading-font w-full max-w-5xl px-4 lg:ml-12 mt-9 z-0 flex gap-6"
 >
   <a
@@ -154,7 +154,7 @@ const handleScroll = ()=> {
     <div className="bg-green-500 w-2.5 h-2.5 rounded-full animate-pulse "></div>
     <p>Open to work</p>
   </button>
-</div>
+          </div> */}
 
 
           <TechStackMarquee/>
