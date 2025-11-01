@@ -7,7 +7,6 @@ import {TechStackMarquee } from "@/Components/ui/TechStack";
 import { ScrollProgress } from "@/Components/magicui/scroll-progress";
 import { Projectcard } from "@/Components/ui/ProjectCard";
 import { EducationCard } from "@/Components/ui/Education";
-import { ShinyButton } from "@/Components/magicui/shiny-button";
 import { Contact } from "@/Components/ui/Contact";
 import { Experience } from "@/Components/ui/Experience";
 import { useNavigate } from "react-router-dom";
