@@ -79,7 +79,7 @@ useEffect(() => {
             <div className="absolute bottom-0 top-0 left-0 w-[70px] bg-gradient-to-r from-white dark:from-neutral-900 to-transparent"></div>
             <div className="absolute bottom-0 top-0 right-0 w-[70px] bg-gradient-to-l from-white dark:from-neutral-900 to-transparent"></div>
 
-            <div className="absolute inset-0 flex items-center font-bold justify-center text-white dark:text-black selection:bg-neutral-400 italic text-xl md:text-2xl heading-font">
+            <div className="absolute underline decoration-indigo-500 inset-0 flex items-center font-bold justify-center text-white dark:text-black selection:bg-neutral-400 italic text-xl md:text-2xl heading-font">
               Build anything.
             </div>
           </div>
@@ -153,7 +153,7 @@ useEffect(() => {
           </div>
 
           <div className="selection:bg-neutral-700 px-0 md:px-2 mt-9 font-bold w-full max-w-5xl">
-            <p className="pl-8 heading-font text-[15px] md:text-xl">Featured Projects</p>
+            <p className="pl-4 md:pl-8 heading-font text-[15px] md:text-xl">Featured Projects</p>
                   <Projectcard />
           </div>
 
