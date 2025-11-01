@@ -122,6 +122,7 @@ export function Projectcard() {
             duration={6}
             size={200}
             className="from-transparent via-red-500 to-transparent"
+            borderWidth={2}
           />
           <BorderBeam
             duration={6}

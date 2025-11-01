@@ -40,27 +40,27 @@ const handleScroll = ()=> {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-4 items-stretch bg-white dark:bg-neutral-900 min-h-screen ">
       <div className="hidden lg:block">
-<div className="h-full w-full bg-white dark:bg-neutral-950 relative">
-  <div
-    className="absolute inset-0 z-0 block dark:hidden"
-    style={{
-      backgroundImage: "repeating-linear-gradient(45deg, transparent, transparent 2px, #f3f4f8 2px, #f3f4f6 4px)",
-    }}
-  />
+        <div className="h-full w-full bg-white dark:bg-neutral-950 relative">
+          <div
+          className="absolute inset-0 z-0 block dark:hidden"
+          style={{
+            backgroundImage: "repeating-linear-gradient(45deg, transparent, transparent 2px, #f3f4f8 2px, #f3f4f6 4px)",
+          }}
+          />
   
-  <div
-    className="absolute inset-0 z-0 hidden dark:block"
-    style={{
-      backgroundImage: "repeating-linear-gradient(45deg, transparent, transparent 2px, #171717 2px, #18181b 4px)",
-    }}
-  />
+          <div
+          className="absolute inset-0 z-0 hidden dark:block"
+          style={{
+            backgroundImage: "repeating-linear-gradient(45deg, transparent, transparent 2px, #171717 2px, #18181b 4px)",
+          }}
+          />
   
-</div>
+        </div>
 
       </div>
 
 
-      <div className="col-span-1 lg:col-span-2">
+      <div className="col-span-1 lg:col-span-2 selection:bg-neutral-700">
         <div className="flex flex-col items-center min-h-screen relative overflow-hidden">
           <div className="fixed top-0 left-0 w-full h-[70px] bg-white dark:bg-black shadow z-30 flex items-center justify-center">
             <div className="w-full max-w-3xl h-full px-2">

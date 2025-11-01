@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import { AnimatedThemeToggler } from "../magicui/animated-theme-toggler";
 import { useNavigate } from "react-router-dom";
 import { GithUbLink, LinkedInLink, XLink } from "@/lib/Links";
+const email = "xprobal52@gmail.com"
 
 
 const BottomDock = ({className = ""}) => {
@@ -53,6 +54,7 @@ const BottomDock = ({className = ""}) => {
         aria-label="Mail"
         className="px-1 py-1.5 hover:mx-2 rounded-full dark:hover:bg-neutral-700/25 dark:text-white hover:bg-neutral-300  transition-all duration-300 ease-in-out"
         size="xl"
+        onClick={()=>window.location.href = `mailto:${email}`}
       />
       <span className="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200 bg-black text-white text-xs px-2 py-1 rounded-md whitespace-nowrap">
         Mail

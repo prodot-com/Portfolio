@@ -9,7 +9,7 @@ export function RainbowButtonCustom() {
     toast.error("Redirecting");
     setTimeout(() => {
       window.location.href = `mailto:${email}`
-    }, 3000);
+    }, 2000);
   }
 
   return (
