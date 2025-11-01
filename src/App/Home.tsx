@@ -10,10 +10,8 @@ import { EducationCard } from "@/Components/ui/Education";
 import { Contact } from "@/Components/ui/Contact";
 import { Experience } from "@/Components/ui/Experience";
 import { useNavigate } from "react-router-dom";
-// import { ResumeLink } from "@/lib/Links";
 import BottomDock from "@/Components/ui/BottomDock";
 import TopArrow from "@/Components/ui/TopArrow";
-// import { InteractiveHoverButton } from "@/Components/magicui/interactive-hover-button";
 
 
 const Home = () => {
@@ -29,13 +27,6 @@ useEffect(() => {
   observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
   return () => observer.disconnect();
 }, []);
-
-// const handleScroll = ()=> {
-//   window.scrollTo({
-//     top: 2000,
-//     behavior: "smooth"
-//   })
-// }
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-4 items-stretch bg-white dark:bg-neutral-900 min-h-screen ">
@@ -128,34 +119,6 @@ useEffect(() => {
               , freelance, or collaborate.
             </p>
           </div>
-
-          {/* <div
-  className="heading-font w-full max-w-5xl px-4 lg:ml-12 mt-9 z-0 flex gap-6"
->
-  <a
-    href={ResumeLink}
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <InteractiveHoverButton>
-      Resume
-    </InteractiveHoverButton>
-  </a>
-
-  <button
-    className="flex items-center gap-2 px-3 py-2 rounded-[4px] border border-green-500
-              text-sm md:text-[15px] transition-all duration-300
-              
-              text-green-700 
-              
-              dark:text-green-400"
-    onClick={() => handleScroll()}
-  >
-    <div className="bg-green-500 w-2.5 h-2.5 rounded-full animate-pulse "></div>
-    <p>Open to work</p>
-  </button>
-          </div> */}
-
 
           <TechStackMarquee/>
 
