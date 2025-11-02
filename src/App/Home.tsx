@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import GitHubCalendar from "react-github-calendar";
 import pro2 from "../../assets/pro2.jpg";
 import hero1 from "../../assets/hero1.jpg";
 import {Copyright} from "lucide-react";
@@ -17,17 +15,6 @@ import GithubCard from "@/Components/ui/GithubCard";
 
 const Home = () => {
   const navigate = useNavigate()
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-useEffect(() => {
-  const currentTheme = document.documentElement.classList.contains("dark");
-  setIsDarkMode(currentTheme);
-  const observer = new MutationObserver(() => {
-    setIsDarkMode(document.documentElement.classList.contains("dark"));
-  });
-  observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
-  return () => observer.disconnect();
-}, []);
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-4 items-stretch bg-white dark:bg-neutral-900 min-h-screen ">
@@ -123,35 +110,6 @@ useEffect(() => {
 
           <TechStackMarquee/>
 
-          {/* <div className="selection:bg-neutral-700 mt-10 px-4 md:px-9 flex flex-col gap-3 w-full max-w-5xl">
-            <div className="md:px-0">
-              <p className="font-bold text-black  dark:text-white text-[15px] md:text-xl heading-font selection:bg-neutral-600">
-                GitHub Contributions •{" "}
-                <span className="underline md:decoration-white md:dark:decoration-neutral-950 md:hover:decoration-green-500 decoration-green-500 cursor-pointer">
-                  <a href="https://github.com/prodot-com/"
-                  target="blank">@prodot-com</a>
-                </span>
-              </p>
-            </div>
-
-            <div className="rounded-[4px] p-[1.4px] animate-rotate-border bg-conic/[from_var(--border-angle)] dark:from-bg-neutral-900 via-green-500 dark:bg-neutral-900 from-80% via-90% to-100%">
-              <div className="relative px-1 py-3 rounded-[4px] bg-white dark:bg-neutral-900 overflow-x-auto scrollbar-hide md:mx-0">
-                <GitHubCalendar
-                  username="prodot-com"
-                  blockSize={8.2}
-                  fontSize={12}
-                  errorMessage="Error while fetching data"
-                  showWeekdayLabels={true}
-                  hideColorLegend={false}
-                  hideTotalCount={false}
-                  colorScheme={isDarkMode ? "dark" : "light"}
-                  style={{
-                    color: isDarkMode ? "white" : "black",
-                  }}
-                />
-              </div>
-            </div>
-          </div> */}
           <GithubCard/>
 
           <div className="selection:bg-neutral-700 px-0 md:px-2 mt-9 font-bold w-full max-w-5xl">
