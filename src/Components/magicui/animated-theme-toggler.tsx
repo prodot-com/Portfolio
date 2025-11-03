@@ -9,9 +9,7 @@ interface AnimatedThemeTogglerProps
 }
 
 export const AnimatedThemeToggler = ({
-  className,
-  duration = 500,
-  ...props
+  duration = 500
 }: AnimatedThemeTogglerProps) => {
   const [isDark, setIsDark] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
