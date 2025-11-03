@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Moon, Sun } from "lucide-react";
 import { flushSync } from "react-dom";
-import { cn } from "@/lib/utils";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface AnimatedThemeTogglerProps
   extends React.ComponentPropsWithoutRef<"button"> {
@@ -62,8 +62,39 @@ export const AnimatedThemeToggler = ({
   }, [isDark, duration]);
 
   return (
-    <button ref={buttonRef} onClick={toggleTheme} className={cn(className)} {...props}>
-      {isDark ? <Sun /> : <Moon />}
-    </button>
+            <div className="flex items-center gap-3">
+          {/* Theme Toggle */}
+          <motion.button
+          ref={buttonRef}
+            onClick={toggleTheme}
+            whileTap={{ rotate: 180, scale: 0.9 }}
+            className="p-2 dark:hover:bg-neutral-700/25 hover:bg-neutral-300 rounded-full hover:ml-2 transition-all duration-300 ease-in-out cursor-pointer"
+            aria-label="Toggle Theme"
+          >
+            <AnimatePresence mode="wait" initial={false}>
+              {isDark ? (
+                <motion.div
+                  key="moon"
+                  initial={{ opacity: 0, rotate: -90 }}
+                  animate={{ opacity: 1, rotate: 0 }}
+                  exit={{ opacity: 0, rotate: 90 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <Moon className="w-5 h-5" />
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="sun"
+                  initial={{ opacity: 0, rotate: 90 }}
+                  animate={{ opacity: 1, rotate: 0 }}
+                  exit={{ opacity: 0, rotate: -90 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <Sun className="w-5 h-5" />
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.button>
+        </div>
   );
 };
