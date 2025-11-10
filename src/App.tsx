@@ -1,4 +1,4 @@
-import Home from "./App/Home"
+import Home from "./App/Page"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Toaster } from "./Components/magicui/sonner";
