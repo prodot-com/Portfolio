@@ -36,7 +36,7 @@ const Home = () => {
   
         </div>
 
-      </div>
+      </div> 
 
 
       <div className="col-span-1 lg:col-span-2 selection:bg-neutral-700">
